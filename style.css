@@ -1,0 +1,10 @@
+.container-fluid {
+    width: 80%;
+    margin: auto;
+    margin-top: 1em;
+}
+
+[data-toggle="tooltip"] {
+    padding-bottom: 2px;
+    border-bottom: 1px dashed #c0392b;
+}

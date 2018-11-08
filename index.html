@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>ODMS</title>
+    <link rel="stylesheet" href="./style.css">
+    
+</head>
+
+<body>
+    <div class="container-fluid">
+        <h3>Tables</h3>
+        <div class="row">
+            <div class="col-md-2">
+                <table class="table table-striped">
+                    <tr>
+                        <th colspan="2">Attributes & Modifiers</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td> -5</td>
+                    </tr>
+                    <tr>
+                        <td>2-3</td>
+                        <td> -4</td>
+                    </tr>
+                    <tr>
+                        <td>4-5</td>
+                        <td> -3</td>
+                    </tr>
+                    <tr>
+                        <td>6-7</td>
+                        <td> -2</td>
+                    </tr>
+                    <tr>
+                        <td>8-9</td>
+                        <td> -1</td>
+                    </tr>
+                    <tr>
+                        <td>10-11 </td>
+                        <td>+0</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col-sm">
+                <table class="table table-striped">
+                    <tr>
+                        <th colspan="2">Skills</th>
+                    </tr>
+                    <tr>
+                        <td><span data-toggle="tooltip" data-placement="top" title="Strength measures bodily power and natural athleticism">Strength</span></td>
+                        <td>Athletics</td>
+                    </tr>
+                    <tr>
+                        <td><span data-toggle="tooltip" data-placement="top" title="Dexterity measures agility, reflexes, balance and poise">Dexterity</span></td>
+                        <td>
+                            Athletics<br />
+                            Acrobatics<br />
+                            Sleight of Hand<br />
+                            Stealth<br />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><span data-toggle="tooltip" data-placement="top" title="Constitution measures natural health, stamina and vital force">Constitution</span></td>
+                        <td><em class="text-muted">Consitution has no associated skills</em></td>
+                    </tr>
+                    <tr>
+                        <td><span data-toggle="tooltip" data-placement="top" title="Intelligence measures mental acuity, information recall and analytical skills">Intelligence</span></td>
+                        <td>
+                            Arcana<br />
+                            History<br />
+                            Investigation<br />
+                            Nature<br />
+                            Religion<br />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><span data-toggle="tooltip" data-placement="top" title="Wisdom measures awareness, intuition and insight">Wisdom</span></td>
+                        <td>
+                            Animal Handling<br />
+                            Insight<br />
+                            Medicine<br />
+                            Perception<br />
+                            Survival<br />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><span data-toggle="tooltip" data-placement="top" title="Charisma measures confidence, eloquence and leadership qualities">Charisma</span></td>
+                        <td>
+                            Deception<br />
+                            Intimidation<br />
+                            Performance<br />
+                            Persuasion<br />
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col-sm">
+                <table class="table table-striped">
+                    <tr>
+                        <th colspan="2">DCs</th>
+                    </tr>
+                        <tr><td>Very Easy</td> <td>(DC 5)</td></tr>
+                        <tr><td>Easy</td> <td>(DC 10)</td></tr>
+                        <tr><td>Medium</td> <td>(DC 15)</td></tr>
+                        <tr><td>Hard</td> <td>(DC 20)</td></tr>
+                        <tr><td>Very Hard</td> <td>(DC 25)</td></tr>
+                        <tr><td>Nearly Impossible</td> <td>(DC 30)</td></tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="dice-roller.js"></script>
+
+
+    <script>
+        $( document ).ready(function() {
+            $('[data-toggle="tooltip"]').tooltip();
+            // Your code here.
+
+        });
+    
+    </script>
+</body>
+
+</html>
