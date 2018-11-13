@@ -13,7 +13,8 @@
 
 <body>
     <div class="container-fluid">
-        <div class="row">
+        <!-- !!!!!!!!!!!!!ATTRIBUTES, SKILLS AND DC!!!!!!!!!!!!!!! -->
+        <div id='row-1' class="row">
             <div class="col">
                 <div class="accordion" id="accordion-attributes">
                     <div class="card border-bottom">
@@ -33,26 +34,26 @@
                                         <table class="table table-striped">
                                             <tr>
                                                 <td>1</td>
-                                                <td> -5</td>
+                                                <td>-5</td>
                                             </tr>
                                             <tr>
                                                 <td>2-3</td>
-                                                <td> -4</td>
+                                                <td>-4</td>
                                             </tr>
                                             <tr>
                                                 <td>4-5</td>
-                                                <td> -3</td>
+                                                <td>-3</td>
                                             </tr>
                                             <tr>
                                                 <td>6-7</td>
-                                                <td> -2</td>
+                                                <td>-2</td>
                                             </tr>
                                             <tr>
                                                 <td>8-9</td>
-                                                <td> -1</td>
+                                                <td>-1</td>
                                             </tr>
                                             <tr>
-                                                <td>10-11 </td>
+                                                <td>10-11</td>
                                                 <td>+0</td>
                                             </tr>
                                         </table>
@@ -205,8 +206,488 @@
                     </div>
                 </div>
             </div>
+            <hr>
+        </div>
+
+        <!-- !!!!!!!!!!!!!!SIMPLE WEAPONS!!!!!!!!!!!!!!!! -->
+        <div id='row-2' class="row">
+            <div class="col">
+                <div class="accordion" id="accordion-simple-melee-weapons">
+                    <div class="card border-bottom">
+                        <div class="card-header">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse-simple-melee-weapons"
+                                    aria-expanded="true" aria-controls="collapse-simple-melee-weapons">
+                                    Simple Melee Weapons
+                                </button>
+                            </h5>
+                        </div>
+
+                        <div id="collapse-simple-melee-weapons" class="collapse show" data-parent="#accordion-simple-melee-weapons">
+                            <div class="card-body">
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>Weapon</th>
+                                            <th>Cost</th>
+                                            <th>Damage</th>
+                                            <th>Weight</th>
+                                            <th>Properties</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Club</td>
+                                            <td>1 sp</td>
+                                            <td>1d4 bludgeoning</td>
+                                            <td>2 lb.</td>
+                                            <td>Light</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Dagger</td>
+                                            <td>2 gp</td>
+                                            <td>1d4 piercing</td>
+                                            <td>1 lb.</td>
+                                            <td>Finesse, light, thrown (range 20/60)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Greatclub</td>
+                                            <td>2 sp</td>
+                                            <td>1d8 bludgeoning</td>
+                                            <td>10 lb.</td>
+                                            <td>Two-handed</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Handaxe</td>
+                                            <td>5 gp</td>
+                                            <td>1d6 slashing</td>
+                                            <td>2 lb.</td>
+                                            <td>Light, thrown (range 20/60)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Javelin</td>
+                                            <td>5 sp</td>
+                                            <td>1d6 piercing</td>
+                                            <td>2 lb.</td>
+                                            <td>Thrown (range 30/120)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Hammer</td>
+                                            <td>2 gp</td>
+                                            <td>1d4 bludgeoning</td>
+                                            <td>2 lb.</td>
+                                            <td>Light, thrown (range 20/60)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Mace</td>
+                                            <td>5 gp</td>
+                                            <td>1d6 bludgeoning</td>
+                                            <td>4 lb.</td>
+                                            <td>—</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Quarterstaff</td>
+                                            <td>2 sp</td>
+                                            <td>1d6 bludgeoning</td>
+                                            <td>4 lb.</td>
+                                            <td>Versatile (1d8)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Sickle</td>
+                                            <td>1 gp</td>
+                                            <td>1d4 slashing</td>
+                                            <td>2 lb.</td>
+                                            <td>Light</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Spear</td>
+                                            <td>1 gp</td>
+                                            <td>1d6 piercing</td>
+                                            <td>3 lb.</td>
+                                            <td>Thrown (range 20/60), versatile (1d8)</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="accordion" id="accordion-simple-ranger-weapons">
+                    <div class="card border-bottom">
+                        <div class="card-header">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse-simple-ranger-weapons"
+                                    aria-expanded="true" aria-controls="collapse-simple-ranger-weapons">
+                                    Simple Ranged Weapons
+                                </button>
+                            </h5>
+                        </div>
+
+                        <div id="collapse-simple-ranger-weapons" class="collapse show" data-parent="#accordion-simple-ranger-weapons">
+                            <div class="card-body">
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>Weapon</th>
+                                            <th>Cost</th>
+                                            <th>Damage</th>
+                                            <th>Weight</th>
+                                            <th>Properties</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Crossbow, light<br>
+                                            </td>
+                                            <td>25 gp</td>
+                                            <td>1d8 piercing</td>
+                                            <td>5 lb.</td>
+                                            <td>Ammunition (range 80/320), loading, two-handed</td>
+                                        </tr>
+                                        <tr>
+                                            <td> Dart </td>
+                                            <td>5 cp</td>
+                                            <td>1d4 piercing</td>
+                                            <td>1/4 lb.</td>
+                                            <td>Finesse, thrown (range 20/60)</td>
+                                        </tr>
+                                        <tr>
+                                            <td> Shortbow </td>
+                                            <td>25 gp</td>
+                                            <td>1d6 piercing</td>
+                                            <td>2 lb.</td>
+                                            <td>Ammunition (range 80/320), two-handed</td>
+                                        </tr>
+                                        <tr>
+                                            <td> Sling </td>
+                                            <td>1 sp</td>
+                                            <td>1d4 bludgeoning</td>
+                                            <td>—</td>
+                                            <td>Ammunition (range 30/120)</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+        </div>
+
+        <!-- !!!!!!!!!!!!!!MARTIAL WEAPONS!!!!!!!!!!!!!!!!!! -->
+        <div id='row-3' class="row">
+            <div class="col">
+                <div class="accordion" id="accordion-martial-melee-weapons">
+                    <div class="card border-bottom">
+                        <div class="card-header">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse-martial-melee-weapons"
+                                    aria-expanded="true" aria-controls="collapse-martial-melee-weapons">
+                                    Martial Melee Weapons
+                                </button>
+                            </h5>
+                        </div>
+
+                        <div id="collapse-martial-melee-weapons" class="collapse show" data-parent="#accordion-martial-melee-weapons">
+                            <div class="card-body">
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>Weapon</th>
+                                            <th>Cost</th>
+                                            <th>Damage</th>
+                                            <th>Weight</th>
+                                            <th>Properties</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <a class="autolink" href="/compendium/dnd5e/Battleaxe#h-Battleaxe"></a><a
+                                                    class="autolink" href="/compendium/dnd5e/Battleaxe#h-Battleaxe">Battleaxe</a>
+                                            </td>
+                                            <td>10 gp</td>
+                                            <td>1d8 slashing</td>
+                                            <td>4 lb.</td>
+                                            <td>Versatile (1d10)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a class="autolink" href="/compendium/dnd5e/Flail#h-Flail"></a><a class="autolink"
+                                                    href="/compendium/dnd5e/Flail#h-Flail">Flail</a>
+                                            </td>
+                                            <td>10 gp</td>
+                                            <td>1d8 bludgeoning</td>
+                                            <td>2 lb.</td>
+                                            <td>—</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a class="autolink" href="/compendium/dnd5e/Glaive#h-Glaive"></a><a
+                                                    class="autolink" href="/compendium/dnd5e/Glaive#h-Glaive">Glaive</a>
+                                            </td>
+                                            <td>20 gp</td>
+                                            <td>1d10 slashing</td>
+                                            <td>6 lb.</td>
+                                            <td>Heavy, reach, two-handed</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a class="autolink" href="/compendium/dnd5e/Greataxe#h-Greataxe"></a><a
+                                                    class="autolink" href="/compendium/dnd5e/Greataxe#h-Greataxe">Greataxe</a>
+                                            </td>
+                                            <td>30 gp</td>
+                                            <td>1d12 slashing</td>
+                                            <td>7 lb.</td>
+                                            <td>Heavy, two-handed</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a class="autolink" href="/compendium/dnd5e/Greatsword#h-Greatsword"></a><a
+                                                    class="autolink" href="/compendium/dnd5e/Greatsword#h-Greatsword">Greatsword</a>
+                                            </td>
+                                            <td>50 gp</td>
+                                            <td>2d6 slashing</td>
+                                            <td>6 lb.</td>
+                                            <td>Heavy, two-handed</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a class="autolink" href="/compendium/dnd5e/Halberd#h-Halberd"></a><a
+                                                    class="autolink" href="/compendium/dnd5e/Halberd#h-Halberd">Halberd</a>
+                                            </td>
+                                            <td>20 gp</td>
+                                            <td>1d10 slashing</td>
+                                            <td>6 lb.</td>
+                                            <td>Heavy, reach, two-handed</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a class="autolink" href="/compendium/dnd5e/Lance#h-Lance"></a><a class="autolink"
+                                                    href="/compendium/dnd5e/Lance#h-Lance">Lance</a>
+                                            </td>
+                                            <td>10 gp</td>
+                                            <td>1d12 piercing</td>
+                                            <td>6 lb.</td>
+                                            <td>Reach, special</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a class="autolink" href="/compendium/dnd5e/Longsword#h-Longsword"></a><a
+                                                    class="autolink" href="/compendium/dnd5e/Longsword#h-Longsword">Longsword</a>
+                                            </td>
+                                            <td>15 gp</td>
+                                            <td>1d8 slashing</td>
+                                            <td>3 lb.</td>
+                                            <td>Versatile (1d10)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a class="autolink" href="/compendium/dnd5e/Maul#h-Maul"></a><a class="autolink"
+                                                    href="/compendium/dnd5e/Maul#h-Maul">Maul</a>
+                                            </td>
+                                            <td>10 gp</td>
+                                            <td>2d6 bludgeoning</td>
+                                            <td>10 lb.</td>
+                                            <td>Heavy, two-handed</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a class="autolink" href="/compendium/dnd5e/Morningstar#h-Morningstar"></a><a
+                                                    class="autolink" href="/compendium/dnd5e/Morningstar#h-Morningstar">Morningstar</a>
+                                            </td>
+                                            <td>15 gp</td>
+                                            <td>1d8 piercing</td>
+                                            <td>4 lb.</td>
+                                            <td>—</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a class="autolink" href="/compendium/dnd5e/Pike#h-Pike"></a><a class="autolink"
+                                                    href="/compendium/dnd5e/Pike#h-Pike">Pike</a>
+                                            </td>
+                                            <td>5 gp</td>
+                                            <td>1d10 piercing</td>
+                                            <td>18 lb.</td>
+                                            <td>Heavy, reach, two-handed</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a class="autolink" href="/compendium/dnd5e/Rapier#h-Rapier"></a><a
+                                                    class="autolink" href="/compendium/dnd5e/Rapier#h-Rapier">Rapier</a>
+                                            </td>
+                                            <td>25 gp</td>
+                                            <td>1d8 piercing</td>
+                                            <td>2 lb.</td>
+                                            <td>Finesse</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a class="autolink" href="/compendium/dnd5e/Scimitar#h-Scimitar"></a><a
+                                                    class="autolink" href="/compendium/dnd5e/Scimitar#h-Scimitar">Scimitar</a>
+                                            </td>
+                                            <td>25 gp</td>
+                                            <td>1d6 slashing</td>
+                                            <td>3 lb.</td>
+                                            <td>Finesse, light</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a class="autolink" href="/compendium/dnd5e/Shortsword#h-Shortsword"></a><a
+                                                    class="autolink" href="/compendium/dnd5e/Shortsword#h-Shortsword">Shortsword</a>
+                                            </td>
+                                            <td>10 gp</td>
+                                            <td>1d6 piercing</td>
+                                            <td>2 lb.</td>
+                                            <td>Finesse, light</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a class="autolink" href="/compendium/dnd5e/Trident#h-Trident"></a><a
+                                                    class="autolink" href="/compendium/dnd5e/Trident#h-Trident">Trident</a>
+                                            </td>
+                                            <td>5 gp</td>
+                                            <td>1d6 piercing</td>
+                                            <td>4 lb.</td>
+                                            <td>Thrown (range 20/60), versatile (1d8)</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a class="autolink" href="/compendium/dnd5e/War%20Pick#h-War%20Pick">War
+                                                    Pick</a></td>
+                                            <td>5 gp</td>
+                                            <td>1d8 piercing</td>
+                                            <td>2 lb.</td>
+                                            <td>—</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a class="autolink" href="/compendium/dnd5e/Warhammer#h-Warhammer"></a><a
+                                                    class="autolink" href="/compendium/dnd5e/Warhammer#h-Warhammer">Warhammer</a>
+                                            </td>
+                                            <td>15 gp</td>
+                                            <td>1d8 bludgeoning</td>
+                                            <td>2 lb.</td>
+                                            <td>Versatile (1d10)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a class="autolink" href="/compendium/dnd5e/Whip#h-Whip"></a><a class="autolink"
+                                                    href="/compendium/dnd5e/Whip#h-Whip">Whip</a>
+                                            </td>
+                                            <td>2 gp</td>
+                                            <td>1d4 slashing</td>
+                                            <td>3 lb.</td>
+                                            <td>Finesse, reach</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="accordion" id="accordion-martial-range-weapons">
+                    <div class="card border-bottom">
+                        <div class="card-header">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse-martial-range-weapons"
+                                    aria-expanded="true" aria-controls="collapse-martial-range-weapons">
+                                    Martial Ranged Weapons
+                                </button>
+                            </h5>
+                        </div>
+
+                        <div id="collapse-martial-range-weapons" class="collapse show" data-parent="#accordion-martial-range-weapons">
+                            <div class="card-body">
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>Weapon</th>
+                                            <th>Cost</th>
+                                            <th>Damage</th>
+                                            <th>Weight</th>
+                                            <th>Properties</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <a class="autolink" href="/compendium/dnd5e/Blowgun#h-Blowgun"></a><a
+                                                    class="autolink" href="/compendium/dnd5e/Blowgun#h-Blowgun">Blowgun</a>
+                                            </td>
+                                            <td>10 gp</td>
+                                            <td>1 piercing</td>
+                                            <td>1 lb.</td>
+                                            <td>
+                                                <a class="autolink" href="/compendium/dnd5e/Monsters#h-Ammunition">Ammunition</a>
+                                                (range 25/100), loading</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Crossbow, hand</td>
+                                            <td>75 gp</td>
+                                            <td>1d6 piercing</td>
+                                            <td>3 lb.</td>
+                                            <td>
+                                                <a class="autolink" href="/compendium/dnd5e/Monsters#h-Ammunition">Ammunition</a>
+                                                (range 30/120), light, loading</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Crossbow, heavy</td>
+                                            <td>50 gp</td>
+                                            <td>1d10 piercing</td>
+                                            <td>18 lb.</td>
+                                            <td>
+                                                <a class="autolink" href="/compendium/dnd5e/Monsters#h-Ammunition">Ammunition</a>
+                                                (range 100/400), heavy, loading, two-handed</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a class="autolink" href="/compendium/dnd5e/Longbow#h-Longbow"></a><a
+                                                    class="autolink" href="/compendium/dnd5e/Longbow#h-Longbow">Longbow</a>
+                                            </td>
+                                            <td>50 gp</td>
+                                            <td>1d8 piercing</td>
+                                            <td>2 lb.</td>
+                                            <td>
+                                                <a class="autolink" href="/compendium/dnd5e/Monsters#h-Ammunition">Ammunition</a>
+                                                (range 150/600), heavy, two-handed</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a class="autolink" href="/compendium/dnd5e/Net#h-Net"></a><a class="autolink"
+                                                    href="/compendium/dnd5e/Net#h-Net">Net</a>
+                                            </td>
+                                            <td>1 gp</td>
+                                            <td>—</td>
+                                            <td>3 lb.</td>
+                                            <td>Special, thrown (range 5/15)</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
         </div>
     </div>
+
+
+
+
+
+
+
+
+
+
+
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
@@ -218,7 +699,11 @@
     <script src='https://cdnjs.cloudflare.com/ajax/libs/dragula/3.7.2/dragula.min.js'></script>
 
     <script>
-        dragula([document.getElementsByClassName('row')[0]]);
+        dragula([
+            document.getElementById('row-1'),
+            document.getElementById('row-2'),
+            document.getElementById('row-3'),
+        ]);
 
     </script>
 
