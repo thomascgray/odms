@@ -22,13 +22,9 @@
   }
 
   .col {
-      margin-bottom: 1em;
+      margin-top: 1em;
   }
-.container-fluid {
-    width: 80%;
-    margin: auto;
-    margin-top: 1em;
-}
+
 
 [data-toggle="tooltip"] {
     padding-bottom: 2px;
