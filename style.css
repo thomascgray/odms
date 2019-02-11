@@ -21,12 +21,25 @@
   filter: alpha(opacity=20);
 }
 
-.col {
+.col:not(.no-top-margin) {
     margin-top: 1em;
 }
 
-.row:last-of-type {
+.row:not(.no-bottom-margin):last-of-type {
   margin-bottom:1em;
+}
+
+.dice-roller span.badge {
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+
+.dice-roller span.badge:hover {
+  opacity:0.8
+}
+
+.dice-roller span.badge:active {
+  opacity:0.6
 }
 
 [data-toggle="tooltip"] {

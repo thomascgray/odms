@@ -10,13 +10,17 @@
         crossorigin="anonymous">
     <title>ODMS</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/solid.css" integrity="sha384-r/k8YTFqmlOaqRkZuSiE9trsrDXkh07mRaoGBMoDcmA58OHILZPsk29i2BsFng1B" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/regular.css" integrity="sha384-IG162Tfx2WTn//TRUi9ahZHsz47lNKzYOp0b6Vv8qltVlPkub2yj9TVwzNck6GEF" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/fontawesome.css" integrity="sha384-4aon80D8rXCGx9ayDt85LbyUHeMWd3UiBaWliBlJ53yzm9hqN21A+o1pqoyK04h+" crossorigin="anonymous">
 </head>
 
 <body>
     <div class="container-fluid">
         <div class="row">
             <div class="col">
-                <p><em class='text-muted'>click headings to collapse cards</em></p>
+                <p><em class='text-muted'>Click headings to collapse cards</em></p>
+                <p><em class='text-muted'>Hover over/click on text with red underline to see further details</em></p>
                 <!-- <p><em class='text-muted'>click and drag cards to move them around</em></p> -->
             </div>
         </div>
@@ -27,10 +31,19 @@
                     <div class="card border-bottom">
                         <div class="card-header">
                             <h5 class="mb-0">
-                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse-attributes"
-                                    aria-expanded="true" aria-controls="collapse-attributes">
-                                    Attributes & Modifiers
-                                </button>
+                                <div class="row no-bottom-margin">
+                                    <div class="col no-top-margin">
+                                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse-attributes"
+                                            aria-expanded="true" aria-controls="collapse-attributes">
+                                            Attributes & Modifiers
+                                        </button>
+                                    </div>
+                                    <div class="col no-top-margin">
+                                        <div class="dice-roller float-right">
+                                            <button type="button" class="btn btn-link" data-notation="4d6-L"><span class="badge badge-primary badge-pill">4d6-L <i class="fas fa-dice fa-lg"></i></span></button>
+                                        </div>
+                                    </div>
+                                </div>
                             </h5>
                         </div>
 
@@ -178,10 +191,19 @@
                     <div class="card border-bottom">
                         <div class="card-header">
                             <h5 class="mb-0">
-                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse-dcs"
-                                    aria-expanded="true" aria-controls="collapse-dcs">
-                                    DCs
-                                </button>
+                                <div class="row no-bottom-margin">
+                                    <div class="col no-top-margin">
+                                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse-dcs"
+                                            aria-expanded="true" aria-controls="collapse-dcs">
+                                            DCs
+                                        </button>
+                                    </div>
+                                    <div class="col no-top-margin">
+                                        <div class="dice-roller float-right">
+                                            <button type="button" class="btn btn-link" data-notation="1d20"><span class="badge badge-primary badge-pill">1d20 <i class="fas fa-dice fa-lg"></i></span></button>
+                                        </div>
+                                    </div>
+                                </div>
                             </h5>
                         </div>
 
@@ -255,42 +277,42 @@
                                             <td>1 sp</td>
                                             <td>1d4 bludgeoning</td>
                                             <td>2 lb.</td>
-                                            <td>Light</td>
+                                            <td><br class="info-light" /></td>
                                         </tr>
                                         <tr>
                                             <td>Dagger</td>
                                             <td>2 gp</td>
                                             <td>1d4 piercing</td>
                                             <td>1 lb.</td>
-                                            <td><info-finesse />, light, thrown (range 20/60)</td>
+                                            <td><br class="info-finesse" />, <br class="info-light" />, <br class="info-thrown" /> (range 20/60)</td>
                                         </tr>
                                         <tr>
                                             <td>Greatclub</td>
                                             <td>2 sp</td>
                                             <td>1d8 bludgeoning</td>
                                             <td>10 lb.</td>
-                                            <td>Two-handed</td>
+                                            <td><br class="info-two-handed" /></td>
                                         </tr>
                                         <tr>
                                             <td>Handaxe</td>
                                             <td>5 gp</td>
                                             <td>1d6 slashing</td>
                                             <td>2 lb.</td>
-                                            <td>Light, thrown (range 20/60)</td>
+                                            <td><br class="info-light" />, <br class="info-thrown" /> (range 20/60)</td>
                                         </tr>
                                         <tr>
                                             <td>Javelin</td>
                                             <td>5 sp</td>
                                             <td>1d6 piercing</td>
                                             <td>2 lb.</td>
-                                            <td>Thrown (range 30/120)</td>
+                                            <td><br class="info-thrown" /> (range 30/120)</td>
                                         </tr>
                                         <tr>
                                             <td>Hammer</td>
                                             <td>2 gp</td>
                                             <td>1d4 bludgeoning</td>
                                             <td>2 lb.</td>
-                                            <td>Light, thrown (range 20/60)</td>
+                                            <td><br class="info-light" />, <br class="info-thrown" /> (range 20/60)</td>
                                         </tr>
                                         <tr>
                                             <td>Mace</td>
@@ -311,14 +333,14 @@
                                             <td>1 gp</td>
                                             <td>1d4 slashing</td>
                                             <td>2 lb.</td>
-                                            <td>Light</td>
+                                            <td><br class="info-light" /></td>
                                         </tr>
                                         <tr>
                                             <td>Spear</td>
                                             <td>1 gp</td>
                                             <td>1d6 piercing</td>
                                             <td>3 lb.</td>
-                                            <td><info-thrown /> (range 20/60), <span data-toggle="tooltip" data-placement="top" title="This weapon can be used with one or two hands. Damage in brackets is when used 2 handed">Versatile</span> (1d8)</td>
+                                            <td><br class="info-thrown" /> (range 20/60), <span data-toggle="tooltip" data-placement="top" title="This weapon can be used with one or two hands. Damage in brackets is when used 2 handed">Versatile</span> (1d8)</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -358,28 +380,28 @@
                                             <td>25 gp</td>
                                             <td>1d8 piercing</td>
                                             <td>5 lb.</td>
-                                            <td><info-ammunition /> (range 80/320), <info-loading />, two-handed</td>
+                                            <td><br class="info-ammunition" /> (range 80/320), <br class="info-loading" />, <br class="info-two-handed" /></td>
                                         </tr>
                                         <tr>
                                             <td> Dart </td>
                                             <td>5 cp</td>
                                             <td>1d4 piercing</td>
                                             <td>1/4 lb.</td>
-                                            <td><info-finesse />, <info-thrown /> (range 20/60)</td>
+                                            <td><br class="info-finesse" />, <br class="info-thrown" /> (range 20/60)</td>
                                         </tr>
                                         <tr>
                                             <td> Shortbow </td>
                                             <td>25 gp</td>
                                             <td>1d6 piercing</td>
                                             <td>2 lb.</td>
-                                            <td><info-ammunition /> (range 80/320), two-handed</td>
+                                            <td><br class="info-ammunition" /> (range 80/320), <br class="info-two-handed" /></td>
                                         </tr>
                                         <tr>
                                             <td> Sling </td>
                                             <td>1 sp</td>
                                             <td>1d4 bludgeoning</td>
                                             <td>—</td>
-                                            <td><info-ammunition /> (range 30/120)</td>
+                                            <td><br class="info-ammunition" /> (range 30/120)</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -426,7 +448,7 @@
                                             <td>10 gp</td>
                                             <td>1d8 slashing</td>
                                             <td>4 lb.</td>
-                                            <td><info-versatile /> (1d10)</td>
+                                            <td><br class="info-versatile" /> (1d10)</td>
                                         </tr>
                                         <tr>
                                             <td>
@@ -440,13 +462,12 @@
                                         </tr>
                                         <tr>
                                             <td>
-                                                <a class="autolink" href="/compendium/dnd5e/Glaive#h-Glaive"></a><a
-                                                    class="autolink" href="/compendium/dnd5e/Glaive#h-Glaive">Glaive</a>
+                                                Glaive
                                             </td>
                                             <td>20 gp</td>
                                             <td>1d10 slashing</td>
                                             <td>6 lb.</td>
-                                            <td>Heavy, reach, two-handed</td>
+                                            <td><br class='info-heavy' />, <br class='info-reach' />, <br class='info-two-handed' /></td>
                                         </tr>
                                         <tr>
                                             <td>
@@ -456,7 +477,7 @@
                                             <td>30 gp</td>
                                             <td>1d12 slashing</td>
                                             <td>7 lb.</td>
-                                            <td>Heavy, two-handed</td>
+                                            <td><br class="info-heavy" />, <br class="info-two-handed" /></td>
                                         </tr>
                                         <tr>
                                             <td>
@@ -466,7 +487,7 @@
                                             <td>50 gp</td>
                                             <td>2d6 slashing</td>
                                             <td>6 lb.</td>
-                                            <td>Heavy, two-handed</td>
+                                            <td><br class="info-heavy" />, <br class="info-two-handed" /></td>
                                         </tr>
                                         <tr>
                                             <td>
@@ -476,7 +497,7 @@
                                             <td>20 gp</td>
                                             <td>1d10 slashing</td>
                                             <td>6 lb.</td>
-                                            <td>Heavy, reach, two-handed</td>
+                                            <td><br class="info-heavy" />, <br class="info-reach" />, <br class="info-two-handed" /></td>
                                         </tr>
                                         <tr>
                                             <td>
@@ -486,7 +507,7 @@
                                             <td>10 gp</td>
                                             <td>1d12 piercing</td>
                                             <td>6 lb.</td>
-                                            <td>Reach, special</td>
+                                            <td><br class="info-reach" />, <br class="info-special" /></td>
                                         </tr>
                                         <tr>
                                             <td>
@@ -496,7 +517,7 @@
                                             <td>15 gp</td>
                                             <td>1d8 slashing</td>
                                             <td>3 lb.</td>
-                                            <td><info-versatile /> (1d10)</td>
+                                            <td><br class="info-versatile" /> (1d10)</td>
                                         </tr>
                                         <tr>
                                             <td>
@@ -506,7 +527,7 @@
                                             <td>10 gp</td>
                                             <td>2d6 bludgeoning</td>
                                             <td>10 lb.</td>
-                                            <td>Heavy, two-handed</td>
+                                            <td><br class="info-heavy" />, <br class="info-two-handed" /></td>
                                         </tr>
                                         <tr>
                                             <td>
@@ -526,7 +547,7 @@
                                             <td>5 gp</td>
                                             <td>1d10 piercing</td>
                                             <td>18 lb.</td>
-                                            <td>Heavy, reach, two-handed</td>
+                                            <td><br class="info-heavy" />, <br class="info-reach" />, <br class="info-two-handed" /></td>
                                         </tr>
                                         <tr>
                                             <td>
@@ -536,7 +557,7 @@
                                             <td>25 gp</td>
                                             <td>1d8 piercing</td>
                                             <td>2 lb.</td>
-                                            <td><info-finesse /></td>
+                                            <td><br class="info-finesse" /></td>
                                         </tr>
                                         <tr>
                                             <td>
@@ -546,7 +567,7 @@
                                             <td>25 gp</td>
                                             <td>1d6 slashing</td>
                                             <td>3 lb.</td>
-                                            <td><info-finesse />, light</td>
+                                            <td><br class="info-finesse" />, <br class="info-light" /></td>
                                         </tr>
                                         <tr>
                                             <td>
@@ -556,7 +577,7 @@
                                             <td>10 gp</td>
                                             <td>1d6 piercing</td>
                                             <td>2 lb.</td>
-                                            <td><info-finesse />, light</td>
+                                            <td><br class="info-finesse" />, <br class="info-light" /></td>
                                         </tr>
                                         <tr>
                                             <td>
@@ -566,7 +587,7 @@
                                             <td>5 gp</td>
                                             <td>1d6 piercing</td>
                                             <td>4 lb.</td>
-                                            <td><info-thrown /> (range 20/60), <info-versatile /> (1d8)</td>
+                                            <td><br class="info-thrown" /> (range 20/60), <br class="info-versatile" /> (1d8)</td>
                                         </tr>
                                         <tr>
                                             <td><a class="autolink" href="/compendium/dnd5e/War%20Pick#h-War%20Pick">War
@@ -584,7 +605,7 @@
                                             <td>15 gp</td>
                                             <td>1d8 bludgeoning</td>
                                             <td>2 lb.</td>
-                                            <td><info-versatile /> (1d10)</td>
+                                            <td><br class="info-versatile" /> (1d10)</td>
                                         </tr>
                                         <tr>
                                             <td>
@@ -594,7 +615,7 @@
                                             <td>2 gp</td>
                                             <td>1d4 slashing</td>
                                             <td>3 lb.</td>
-                                            <td><info-finesse />, reach</td>
+                                            <td><br class="info-finesse" />, <br class="info-reach" /></td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -637,8 +658,8 @@
                                             <td>1 piercing</td>
                                             <td>1 lb.</td>
                                             <td>
-                                                <info-ammunition />
-                                                (range 25/100), loading</td>
+                                                <br class="info-ammunition"/>
+                                                (range 25/100), <br class="info-loading" /></td>
                                         </tr>
                                         <tr>
                                             <td>Crossbow, hand</td>
@@ -646,8 +667,8 @@
                                             <td>1d6 piercing</td>
                                             <td>3 lb.</td>
                                             <td>
-                                                <a class="autolink" href="/compendium/dnd5e/Monsters#h-Ammunition">Ammunition</a>
-                                                (range 30/120), light, loading</td>
+                                                <br class="info-ammunition"/>
+                                                (range 30/120), <br class="info-light" />, <br class="info-loading" /></td>
                                         </tr>
                                         <tr>
                                             <td>Crossbow, heavy</td>
@@ -655,8 +676,8 @@
                                             <td>1d10 piercing</td>
                                             <td>18 lb.</td>
                                             <td>
-                                                <a class="autolink" href="/compendium/dnd5e/Monsters#h-Ammunition">Ammunition</a>
-                                                (range 100/400), heavy, loading, two-handed</td>
+                                                <br class="info-ammunition"/>
+                                                (range 100/400), <br class="info-heavy" />, <br class="info-loading" />, <br class="info-two-handed" /></td>
                                         </tr>
                                         <tr>
                                             <td>
@@ -667,8 +688,8 @@
                                             <td>1d8 piercing</td>
                                             <td>2 lb.</td>
                                             <td>
-                                                <a class="autolink" href="/compendium/dnd5e/Monsters#h-Ammunition">Ammunition</a>
-                                                (range 150/600), heavy, two-handed</td>
+                                                <br class="info-ammunition"/>
+                                                (range 150/600), <br class="info-heavy" />, <br class="info-two-handed" /></td>
                                         </tr>
                                         <tr>
                                             <td>
@@ -678,7 +699,7 @@
                                             <td>1 gp</td>
                                             <td>—</td>
                                             <td>3 lb.</td>
-                                            <td>Special, thrown (range 5/15)</td>
+                                            <td><br class="info-special" />, <br class="info-thrown" /> (range 5/15)</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -702,28 +723,33 @@
     <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/dragula/3.7.2/dragula.min.js'></script> -->
 
     <script>
-        // dragula([
-        //     // document.getElementById('row-1'),
-        //     // document.getElementById('row-2'),
-        //     // document.getElementById('row-3'),
-        // ]);
+
+        window.AppDiceRoller = new DiceRoller();
+        
+        const diceRolls = [];
+
 
         $(document).ready(function () {
             // turn on tooltips
+            $('.info-thrown').replaceWith('<span data-toggle="tooltip" data-placement="top" title="This weapon can be thrown as a ranged attack. Use the same ability modifier for the attack roll and damage roll that you would use for a melee attack with the weapon">Thrown</span>')
+            $('.info-versatile').replaceWith('<span data-toggle="tooltip" data-placement="top" title="This weapon can be used with one or two hands. Damage in brackets is when used 2 handed">Versatile</span>')
+            $('.info-finesse').replaceWith('<span data-toggle="tooltip" data-placement="top" title="When making an attack with a finesse weapon, you use your choice of your Strength or Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls">Finesse</span>')
+            $('.info-special').replaceWith('<span data-toggle="tooltip" data-placement="top" title="A weapon with the special property has unusual rules governing its use, explained in the weapon\'s description">Special</span>')
+            $('.info-ammunition').replaceWith('<span data-toggle="tooltip" data-placement="top" title="This weapon requires ammunition to fire. After a battle, you can recover half your expended ammunition by taking a minute to search the battlefield">Ammunition</span>')
+            $('.info-loading').replaceWith('<span data-toggle="tooltip" data-placement="top" title="Because of the time required to load this weapon, you can fire only one piece of ammunition from it when you use an action, bonus action, or reaction to fire it, regardless of the number of attacks you can normally make">Loading</span>')
+            $('.info-light').replaceWith('<span data-toggle="tooltip" data-placement="top" title="A light weapon is small and easy to handle, making it ideal for use when fighting with two weapons">Light</span>')
+            $('.info-heavy').replaceWith('<span data-toggle="tooltip" data-placement="top" title="Small creatures have disadvantage on attack rolls with heavy weapons. A heavy weapon\'s size and bulk make it too large for a Small creature to use effectively">Heavy</span>')
+            $('.info-reach').replaceWith('<span data-toggle="tooltip" data-placement="top" title="This weapon adds 5 feet to your reach when you attack with it, as well as when determining your reach for opportunity attacks with it">Reach</span>')
+            $('.info-two-handed').replaceWith('<span data-toggle="tooltip" data-placement="top" title="This weapon requires two hands when you attack with it">Two-Handed</span>')
+           
+            // dice rollers
             
-            
-            $('info-thrown').prepend('<span data-toggle="tooltip" data-placement="top" title="This weapon can be thrown as a ranged attack. Use the same ability modifier for the attack roll and damage roll that you would use for a melee attack with the weapon">Thrown</span>')
-            $('info-versatile').prepend('<span data-toggle="tooltip" data-placement="top" title="This weapon can be used with one or two hands. Damage in brackets is when used 2 handed">Versatile</span>')
-            $('info-finesse').prepend('<span data-toggle="tooltip" data-placement="top" title="When making an attack with a finesse weapon, you use your choice of your Strength or Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls">Finesse</span>')
-            $('info-light').prepend('<span data-toggle="tooltip" data-placement="top" title="A light weapon is small and easy to handle, making it ideal for use when fighting with two weapons">Light</span>')
-            $('info-special').prepend('<span data-toggle="tooltip" data-placement="top" title="A weapon with the special property has unusual rules governing its use, explained in the weapon\'s description">Special</span>')
-            $('info-ammunition').prepend('<span data-toggle="tooltip" data-placement="top" title="This weapon requires ammunition to fire. After a battle, you can recover half your expended ammunition by taking a minute to search the battlefield">Ammunition</span>')
-            $('info-loading').prepend('<span data-toggle="tooltip" data-placement="top" title="Because of the time required to load this weapon, you can fire only one piece of ammunition from it when you use an action, bonus action, or reaction to fire it, regardless of the number of attacks you can normally make">Loading</span>')
-            $('info-two-handed').prepend('<span data-toggle="tooltip" data-placement="top" title="This weapon requires two hands when you attack with it">Two-Handed</span>')
-            $('info-light').prepend('<span data-toggle="tooltip" data-placement="top" title=" A light weapon is small and easy to handle, making it ideal for use when fighting with two weapons">Light</span>')
-            
-
-            
+            $(".dice-roller button").on('click', function () {
+                const notation = $(this).data('notation')
+                const result = window.AppDiceRoller.roll(notation);
+                console.log(`You roll ${notation} for a total of ${result.total}`);
+                diceRolls.push(result);
+            })
 
             $('[data-toggle="tooltip"]').tooltip();
         });
