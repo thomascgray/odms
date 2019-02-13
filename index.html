@@ -19,141 +19,960 @@
 </head>
 
 <body>
+    <div class="container-fluid">
+        <!-- COMBAT -->
+        <h2>
+            <a data-toggle="collapse" href="#collapse-combat" role="button" aria-expanded="false"
+                aria-controls="collapse-combat">
+                Combat
+            </a>
+        </h2>
+        <div class="collapse" id="collapse-combat">
+            <div class="row">
+                <div class="col col-12 col-md-6">
+                    <h3>Actions in Combat</h3>
+                    <table class="table table-striped table-responsive">
+                        <thead>
+                            <tr>
+                                <th scope="col">Action</th>
+                                <th scope="col">Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><a href="https://www.dndbeyond.com/compendium/rules/basic-rules/combat#Attack"
+                                        target='_blank'>Attack</a></td>
+                                <td>Make a melee or ranged attack</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.dndbeyond.com/compendium/rules/basic-rules/combat#CastaSpell"
+                                        target='_blank'>Cast a Spell</a></td>
+                                <td>Cast a cantrip or a spell of 1st level or higher</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.dndbeyond.com/compendium/rules/basic-rules/combat#Dash"
+                                        target='_blank'>Dash</a></td>
+                                <td>Gain extra movement equal to your speed (plus any modifiers) for the current
+                                    turn</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.dndbeyond.com/compendium/rules/basic-rules/combat#Disengage"
+                                        target='_blank'>Disengage</a></td>
+                                <td>Your movement doesn't provoke attacks of opportunity for the rest of the
+                                    turn
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.dndbeyond.com/compendium/rules/basic-rules/combat#Dodge"
+                                        target='_blank'>Dodge</a></td>
+                                <td>Any attack roll made against you has disadvantage until the start of your
+                                    next
+                                    turn, and you
+                                    make Dex saving throws with advantage. Effect stops if incapacitated or
+                                    speed
+                                    becomes 0</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.dndbeyond.com/compendium/rules/basic-rules/combat#Help"
+                                        target='_blank'>Help</a></td>
+                                <td>Aid another creature in a task it is performing, or an attack it is making -
+                                    it
+                                    gains
+                                    advantage on it's next ability check for that task, or attack roll for the
+                                    attack</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.dndbeyond.com/compendium/rules/basic-rules/combat#Hide"
+                                        target='_blank'>Hide</a></td>
+                                <td>Make a Dex (Stealth) check. If successful, you become hidden - unseen and
+                                    unheard</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.dndbeyond.com/compendium/rules/basic-rules/combat#Ready"
+                                        target='_blank'>Ready</a></td>
+                                <td>Agree with your DM a "trigger", and an action you take when that trigger
+                                    "fires". You
+                                    perform the action on the turn that the trigger fires. E.g "If the goblin
+                                    walks
+                                    towards me,
+                                    I fire my arrow"</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.dndbeyond.com/compendium/rules/basic-rules/combat#Search"
+                                        target='_blank'>Search</a></td>
+                                <td>Make a Wis (Perception) or Int (Investigation) check to find something.</td>
+                            </tr>
+                            <tr>
+                                    <td>Shove</td>
+                                    <td>Uses up 1 Attack action. Make a </td>
+                                </tr>
+                            <tr>
+                                <td>Use a Magic Item</td>
+                                <td>Use a magic item that requires your action for its use</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.dndbeyond.com/compendium/rules/basic-rules/combat#UseanObject"
+                                        target='_blank'>Use an Object</a></td>
+                                <td>Use an object, other than a magic item, that requires your action for its
+                                    use
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Use a Special Ability</td>
+                                <td>Use a class feature, racial ability or other special ability that requires
+                                    your
+                                    action for
+                                    its use</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
 
+                <div class="col col-12 col-md-6">
+                    <!-- COVER -->
+                    <h3>Cover</h3>
+                    <table class="table table-striped table-responsive">
+                        <thead>
+                            <tr>
+                                <th scope="col">Cover Type</th>
+                                <th scope="col">Example of cover</th>
+                                <th scope="col">AC & Dex Saving Throw Bonus</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Half</td>
+                                <td>A low wall, a large piece of furniture, a narrow tree trunk, another
+                                    creature
+                                </td>
+                                <td>+2</td>
+                            </tr>
+                            <tr>
+                                <td>Three-Quarters</td>
+                                <td>A portcullis, an arrow slit, a thick tree trunk</td>
+                                <td>+5</td>
+                            </tr>
+                            <tr>
+                                <td>Total (Completely obscured, e.g behind a wall)</td>
+                                <td colspan="2">Creature cannot be targeted by an attack or spell, although some
+                                    spells can
+                                    reach such a
+                                    target by including it in an area of effect</td>
+                            </tr>
+                        </tbody>
+                    </table>
 
-    <div class="row">
-
-        <div class="col col-12 col-md-6">
-            <h3>Actions in Combat</h3>
-            <table class="table table-striped table-responsive">
-                <thead>
-                    <tr>
-                        <th scope="col">Action</th>
-                        <th scope="col">Description</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><a href="https://www.dndbeyond.com/compendium/rules/basic-rules/combat#Attack"
-                                target='_blank'>Attack</a></td>
-                        <td>Make a melee or ranged attack</td>
-                    </tr>
-                    <tr>
-                        <td><a href="https://www.dndbeyond.com/compendium/rules/basic-rules/combat#CastaSpell"
-                                target='_blank'>Cast a Spell</a></td>
-                        <td>Cast a cantrip or a spell of 1st level or higher</td>
-                    </tr>
-                    <tr>
-                        <td><a href="https://www.dndbeyond.com/compendium/rules/basic-rules/combat#Dash"
-                                target='_blank'>Dash</a></td>
-                        <td>Gain extra movement equal to your speed (plus any modifiers) for the current turn</td>
-                    </tr>
-                    <tr>
-                        <td><a href="https://www.dndbeyond.com/compendium/rules/basic-rules/combat#Disengage"
-                                target='_blank'>Disengage</a></td>
-                        <td>Your movement doesn't provoke attacks of opportunity for the rest of the turn</td>
-                    </tr>
-                    <tr>
-                        <td><a href="https://www.dndbeyond.com/compendium/rules/basic-rules/combat#Dodge"
-                                target='_blank'>Dodge</a></td>
-                        <td>Any attack roll made against you has disadvantage until the start of your next turn, and you
-                            make Dex saving throws with advantage. Effect stops if incapacitated or speed becomes 0</td>
-                    </tr>
-                    <tr>
-                        <td><a href="https://www.dndbeyond.com/compendium/rules/basic-rules/combat#Help"
-                                target='_blank'>Help</a></td>
-                        <td>Aid another creature in a task it is performing, or an attack it is making - it gains
-                            advantage on it's next ability check for that task, or attack roll for the attack</td>
-                    </tr>
-                    <tr>
-                        <td><a href="https://www.dndbeyond.com/compendium/rules/basic-rules/combat#Hide"
-                                target='_blank'>Hide</a></td>
-                        <td>Make a Dex (Stealth) check. If successful, you become hidden - unseen and unheard</td>
-                    </tr>
-                    <tr>
-                        <td><a href="https://www.dndbeyond.com/compendium/rules/basic-rules/combat#Ready"
-                                target='_blank'>Ready</a></td>
-                        <td>Agree with your DM a "trigger", and an action you take when that trigger "fires". You
-                            perform the action on the turn that the trigger fires. E.g "If the goblin walks towards me,
-                            I fire my arrow"</td>
-                    </tr>
-                    <tr>
-                        <td><a href="https://www.dndbeyond.com/compendium/rules/basic-rules/combat#Search"
-                                target='_blank'>Search</a></td>
-                        <td>Make a Wis (Perception) or Int (Investigation) check to find something.</td>
-                    </tr>
-                    <tr>
-                        <td>Use a Magic Item</td>
-                        <td>Use a magic item that requires your action for its use</td>
-                    </tr>
-                    <tr>
-                        <td><a href="https://www.dndbeyond.com/compendium/rules/basic-rules/combat#UseanObject"
-                                target='_blank'>Use an Object</a></td>
-                        <td>Use an object, other than a magic item, that requires your action for its use</td>
-                    </tr>
-                    <tr>
-                        <td>Use a Special Ability</td>
-                        <td>Use a class feature, racial ability or other special ability that requires your action for
-                            its use</td>
-                    </tr>
-                </tbody>
-            </table>
+                    <h3>Everything A Creature Can Do On It's Turn</h3>
+                    <table class="table table-striped table-responsive">
+                        <tr>
+                            <td>Move</td>
+                            <td>Move up to your speed. Movement can include jumping, swimming, climbing, etc.
+                                Movement can be
+                                broken up, e.g move 10ft, attack, move 20ft</td>
+                        </tr>
+                        <tr>
+                            <td>Take an Action</td>
+                            <td>By default, every creature can take one action per turn</td>
+                        </tr>
+                        <tr>
+                            <td>Take an Bonus Action</td>
+                            <td>Some creatures get bonus actions based on their class, race, etc. A creature can
+                                only ever take
+                                a single bonus action per turn</td>
+                        </tr>
+                        <tr>
+                            <td>Communicate</td>
+                            <td>A creature can communicate when moving or performing an action, via speaking,
+                                gestures, etc.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Interact with the Environment</td>
+                            <td>A creature can interact with 1 object or feature of the environment as they move
+                                or
+                                take their
+                                action. To interact with a 2nd, they must use the "Use an Object" action</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
         </div>
 
-        <div class="col col-12 col-md-6">
-            <!-- COVER -->
-            <h3>Cover</h3>
-            <table class="table table-striped table-responsive">
-                <thead>
-                    <tr>
-                        <th scope="col">Cover Type</th>
-                        <th scope="col">Example of cover</th>
-                        <th scope="col">AC & Dex Saving Throw Bonus</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Half</td>
-                        <td>A low wall, a large piece of furniture, a narrow tree trunk, another creature</td>
-                        <td>+2</td>
-                    </tr>
-                    <tr>
-                        <td>Three-Quarters</td>
-                        <td>A portcullis, an arrow slit, a thick tree trunk</td>
-                        <td>+5</td>
-                    </tr>
-                    <tr>
-                        <td>Total (Completely obscured, e.g behind a wall)</td>
-                        <td colspan="2">Creature cannot be targeted by an attack or spell, although some spells can
-                            reach such a
-                            target by including it in an area of effect</td>
-                    </tr>
-                </tbody>
-            </table>
+        <h2>
+            <a data-toggle="collapse" href="#collapse-weapons" role="button" aria-expanded="false"
+                aria-controls="collapse-weapons">
+                Weapons
+            </a>
+        </h2>
+        <div class="collapse" id="collapse-weapons">
+            <!-- SIMPLE WEAPONS -->
+            <div id='row-2' class="row">
+                <div class="col">
+                    <div class="accordion" id="accordion-simple-melee-weapons">
+                        <div class="card border-bottom">
+                            <div class="card-header">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link" type="button" data-toggle="collapse"
+                                        data-target="#collapse-simple-melee-weapons" aria-expanded="true"
+                                        aria-controls="collapse-simple-melee-weapons">
+                                        Simple Melee Weapons
+                                    </button>
+                                </h5>
+                            </div>
 
-            <h3>Everything A Creature Can Do On It's Turn</h3>
-            <table class="table table-striped table-responsive">
-                <tr>
-                    <td>Move</td>
-                    <td>Move up to your speed. Movement can include jumping, swimming, climbing, etc. Movement can be broken up, e.g move 10ft, attack, move 20ft</td>
-                </tr>
-                <tr>
-                    <td>Take an Action</td>
-                    <td>By default, every creature can take one action per turn</td>
-                </tr>
-                <tr>
-                    <td>Take an Bonus Action</td>
-                    <td>Some creatures get bonus actions based on their class, race, etc. A creature can only ever take a single bonus action per turn</td>
-                </tr>
-                <tr>
-                    <td>Communicate</td>
-                    <td>A creature can communicate when moving or performing an action, via speaking, gestures, etc.</td>
-                </tr>
-                <tr>
-                    <td>Interact with the Environment</td>
-                    <td>A creature can interact with 1 object or feature of the environment as they move or take their action. To interact with a 2nd, they must use the "Use an Object" action</td>
-                </tr>
-            </table>
+                            <div id="collapse-simple-melee-weapons" class="collapse show"
+                                data-parent="#accordion-simple-melee-weapons">
+                                <div class="card-body">
+                                    <table class="table table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th>Weapon</th>
+                                                <th>Cost</th>
+                                                <th>Damage</th>
+                                                <th>Weight</th>
+                                                <th>Properties</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Club</td>
+                                                <td>1 sp</td>
+                                                <td><br class="dice-roller" data-notation="1d4" /> bludgeoning</td>
+                                                <td>2 lb.</td>
+                                                <td><br class="info-light" /></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Dagger</td>
+                                                <td>2 gp</td>
+                                                <td>1d4 piercing</td>
+                                                <td>1 lb.</td>
+                                                <td><br class="info-finesse" />, <br class="info-light" />, <br
+                                                        class="info-thrown" />
+                                                    (range 20/60)</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Greatclub</td>
+                                                <td>2 sp</td>
+                                                <td>1d8 bludgeoning</td>
+                                                <td>10 lb.</td>
+                                                <td><br class="info-two-handed" /></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Handaxe</td>
+                                                <td>5 gp</td>
+                                                <td>1d6 slashing</td>
+                                                <td>2 lb.</td>
+                                                <td><br class="info-light" />, <br class="info-thrown" /> (range 20/60)
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Javelin</td>
+                                                <td>5 sp</td>
+                                                <td>1d6 piercing</td>
+                                                <td>2 lb.</td>
+                                                <td><br class="info-thrown" /> (range 30/120)</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Hammer</td>
+                                                <td>2 gp</td>
+                                                <td>1d4 bludgeoning</td>
+                                                <td>2 lb.</td>
+                                                <td><br class="info-light" />, <br class="info-thrown" /> (range 20/60)
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Mace</td>
+                                                <td>5 gp</td>
+                                                <td>1d6 bludgeoning</td>
+                                                <td>4 lb.</td>
+                                                <td>—</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Quarterstaff</td>
+                                                <td>2 sp</td>
+                                                <td>1d6 bludgeoning</td>
+                                                <td>4 lb.</td>
+                                                <td><br class="info-versatile" /> (1d8)</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Sickle</td>
+                                                <td>1 gp</td>
+                                                <td>1d4 slashing</td>
+                                                <td>2 lb.</td>
+                                                <td><br class="info-light" /></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Spear</td>
+                                                <td>1 gp</td>
+                                                <td>1d6 piercing</td>
+                                                <td>3 lb.</td>
+                                                <td><br class="info-thrown" /> (range 20/60), <br
+                                                        class="info-versatile" />
+                                                    (1d8)</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="accordion" id="accordion-simple-ranger-weapons">
+                        <div class="card border-bottom">
+                            <div class="card-header">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link" type="button" data-toggle="collapse"
+                                        data-target="#collapse-simple-ranger-weapons" aria-expanded="true"
+                                        aria-controls="collapse-simple-ranger-weapons">
+                                        Simple Ranged Weapons
+                                    </button>
+                                </h5>
+                            </div>
+
+                            <div id="collapse-simple-ranger-weapons" class="collapse show"
+                                data-parent="#accordion-simple-ranger-weapons">
+                                <div class="card-body">
+                                    <table class="table table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th>Weapon</th>
+                                                <th>Cost</th>
+                                                <th>Damage</th>
+                                                <th>Weight</th>
+                                                <th>Properties</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Crossbow, light<br>
+                                                </td>
+                                                <td>25 gp</td>
+                                                <td>1d8 piercing</td>
+                                                <td>5 lb.</td>
+                                                <td><br class="info-ammunition" /> (range 80/320), <br
+                                                        class="info-loading" />,
+                                                    <br class="info-two-handed" /></td>
+                                            </tr>
+                                            <tr>
+                                                <td> Dart </td>
+                                                <td>5 cp</td>
+                                                <td>1d4 piercing</td>
+                                                <td>1/4 lb.</td>
+                                                <td><br class="info-finesse" />, <br class="info-thrown" /> (range
+                                                    20/60)
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td> Shortbow </td>
+                                                <td>25 gp</td>
+                                                <td>1d6 piercing</td>
+                                                <td>2 lb.</td>
+                                                <td><br class="info-ammunition" /> (range 80/320), <br
+                                                        class="info-two-handed" /></td>
+                                            </tr>
+                                            <tr>
+                                                <td> Sling </td>
+                                                <td>1 sp</td>
+                                                <td>1d4 bludgeoning</td>
+                                                <td>—</td>
+                                                <td><br class="info-ammunition" /> (range 30/120)</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+            </div>
+
+            <!-- MARTIAL WEAPONS -->
+            <div id='row-3' class="row">
+                <div class="col">
+                    <div class="accordion" id="accordion-martial-melee-weapons">
+                        <div class="card border-bottom">
+                            <div class="card-header">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link" type="button" data-toggle="collapse"
+                                        data-target="#collapse-martial-melee-weapons" aria-expanded="true"
+                                        aria-controls="collapse-martial-melee-weapons">
+                                        Martial Melee Weapons
+                                    </button>
+                                </h5>
+                            </div>
+
+                            <div id="collapse-martial-melee-weapons" class="collapse show"
+                                data-parent="#accordion-martial-melee-weapons">
+                                <div class="card-body">
+                                    <table class="table table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th>Weapon</th>
+                                                <th>Cost</th>
+                                                <th>Damage</th>
+                                                <th>Weight</th>
+                                                <th>Properties</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    Battleaxe
+                                                </td>
+                                                <td>10 gp</td>
+                                                <td>1d8 slashing</td>
+                                                <td>4 lb.</td>
+                                                <td><br class="info-versatile" /> (1d10)</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Flail
+                                                </td>
+                                                <td>10 gp</td>
+                                                <td>1d8 bludgeoning</td>
+                                                <td>2 lb.</td>
+                                                <td>—</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Glaive
+                                                </td>
+                                                <td>20 gp</td>
+                                                <td>1d10 slashing</td>
+                                                <td>6 lb.</td>
+                                                <td><br class='info-heavy' />, <br class='info-reach' />, <br
+                                                        class='info-two-handed' /></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Greataxe
+                                                </td>
+                                                <td>30 gp</td>
+                                                <td>1d12 slashing</td>
+                                                <td>7 lb.</td>
+                                                <td><br class="info-heavy" />, <br class="info-two-handed" /></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Greatsword
+                                                </td>
+                                                <td>50 gp</td>
+                                                <td>2d6 slashing</td>
+                                                <td>6 lb.</td>
+                                                <td><br class="info-heavy" />, <br class="info-two-handed" /></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Halberd
+                                                </td>
+                                                <td>20 gp</td>
+                                                <td>1d10 slashing</td>
+                                                <td>6 lb.</td>
+                                                <td><br class="info-heavy" />, <br class="info-reach" />, <br
+                                                        class="info-two-handed" /></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Lance
+                                                </td>
+                                                <td>10 gp</td>
+                                                <td>1d12 piercing</td>
+                                                <td>6 lb.</td>
+                                                <td><br class="info-reach" />, <br class="info-special" /></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Longsword
+                                                </td>
+                                                <td>15 gp</td>
+                                                <td>1d8 slashing</td>
+                                                <td>3 lb.</td>
+                                                <td><br class="info-versatile" /> (1d10)</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Maul
+                                                </td>
+                                                <td>10 gp</td>
+                                                <td>2d6 bludgeoning</td>
+                                                <td>10 lb.</td>
+                                                <td><br class="info-heavy" />, <br class="info-two-handed" /></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Morningstar
+                                                </td>
+                                                <td>15 gp</td>
+                                                <td>1d8 piercing</td>
+                                                <td>4 lb.</td>
+                                                <td>—</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Pike
+                                                </td>
+                                                <td>5 gp</td>
+                                                <td>1d10 piercing</td>
+                                                <td>18 lb.</td>
+                                                <td><br class="info-heavy" />, <br class="info-reach" />, <br
+                                                        class="info-two-handed" /></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Rapier
+                                                </td>
+                                                <td>25 gp</td>
+                                                <td>1d8 piercing</td>
+                                                <td>2 lb.</td>
+                                                <td><br class="info-finesse" /></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Scimitar
+                                                </td>
+                                                <td>25 gp</td>
+                                                <td>1d6 slashing</td>
+                                                <td>3 lb.</td>
+                                                <td><br class="info-finesse" />, <br class="info-light" /></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Shortsword
+                                                </td>
+                                                <td>10 gp</td>
+                                                <td>1d6 piercing</td>
+                                                <td>2 lb.</td>
+                                                <td><br class="info-finesse" />, <br class="info-light" /></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Trident
+                                                </td>
+                                                <td>5 gp</td>
+                                                <td>1d6 piercing</td>
+                                                <td>4 lb.</td>
+                                                <td><br class="info-thrown" /> (range 20/60), <br
+                                                        class="info-versatile" />
+                                                    (1d8)</td>
+                                            </tr>
+                                            <tr>
+                                                <td>War Pick</td>
+                                                <td>5 gp</td>
+                                                <td>1d8 piercing</td>
+                                                <td>2 lb.</td>
+                                                <td>—</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Warhammer
+                                                </td>
+                                                <td>15 gp</td>
+                                                <td>1d8 bludgeoning</td>
+                                                <td>2 lb.</td>
+                                                <td><br class="info-versatile" /> (1d10)</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Whip
+                                                </td>
+                                                <td>2 gp</td>
+                                                <td>1d4 slashing</td>
+                                                <td>3 lb.</td>
+                                                <td><br class="info-finesse" />, <br class="info-reach" /></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="accordion" id="accordion-martial-range-weapons">
+                        <div class="card border-bottom">
+                            <div class="card-header">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link" type="button" data-toggle="collapse"
+                                        data-target="#collapse-martial-range-weapons" aria-expanded="true"
+                                        aria-controls="collapse-martial-range-weapons">
+                                        Martial Ranged Weapons
+                                    </button>
+                                </h5>
+                            </div>
+
+                            <div id="collapse-martial-range-weapons" class="collapse show"
+                                data-parent="#accordion-martial-range-weapons">
+                                <div class="card-body">
+                                    <table class="table table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th>Weapon</th>
+                                                <th>Cost</th>
+                                                <th>Damage</th>
+                                                <th>Weight</th>
+                                                <th>Properties</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    Blowgun
+                                                </td>
+                                                <td>10 gp</td>
+                                                <td>1 piercing</td>
+                                                <td>1 lb.</td>
+                                                <td>
+                                                    <br class="info-ammunition" />
+                                                    (range 25/100), <br class="info-loading" /></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Crossbow, hand</td>
+                                                <td>75 gp</td>
+                                                <td>1d6 piercing</td>
+                                                <td>3 lb.</td>
+                                                <td>
+                                                    <br class="info-ammunition" />
+                                                    (range 30/120), <br class="info-light" />, <br
+                                                        class="info-loading" />
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Crossbow, heavy</td>
+                                                <td>50 gp</td>
+                                                <td>1d10 piercing</td>
+                                                <td>18 lb.</td>
+                                                <td>
+                                                    <br class="info-ammunition" />
+                                                    (range 100/400), <br class="info-heavy" />, <br
+                                                        class="info-loading" />,
+                                                    <br class="info-two-handed" /></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Longbow
+                                                </td>
+                                                <td>50 gp</td>
+                                                <td>1d8 piercing</td>
+                                                <td>2 lb.</td>
+                                                <td>
+                                                    <br class="info-ammunition" />
+                                                    (range 150/600), <br class="info-heavy" />, <br
+                                                        class="info-two-handed" /></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Net
+                                                </td>
+                                                <td>1 gp</td>
+                                                <td>—</td>
+                                                <td>3 lb.</td>
+                                                <td><br class="info-special" />, <br class="info-thrown" /> (range 5/15)
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+            </div>
+        </div>
+
+        <h2>
+            <a data-toggle="collapse" href="#collapse-attributes-and-skills" role="button" aria-expanded="false"
+                aria-controls="collapse-attributes-and-skills">
+                Abilities & Skills
+            </a>
+        </h2>
+        <div class="collapse" id="collapse-attributes-and-skills">
+            <div id='row-1' class="row">
+                <div class="col col-12 col-md-4">
+                    <div class="accordion" id="accordion-attributes">
+                        <div class="card border-bottom">
+                            <div class="card-header">
+                                <h5 class="mb-0">
+                                    <div class="row no-bottom-margin">
+                                        <div class="col no-top-margin">
+                                            <button class="btn btn-link" type="button" data-toggle="collapse"
+                                                data-target="#collapse-attributes" aria-expanded="true"
+                                                aria-controls="collapse-attributes">
+                                                Attributes & Modifiers
+                                            </button>
+                                        </div>
+                                        <div class="col no-top-margin">
+                                            <div class="float-right">
+                                                <br class="dice-roller" data-notation="4d6-L" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </h5>
+                            </div>
+
+                            <div id="collapse-attributes" class="collapse show" data-parent="#accordion-attributes">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col col-12 col-sm-6">
+                                            <div class="table-responsive">
+                                                <table class="table table-striped">
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>-5</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2-3</td>
+                                                        <td>-4</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>4-5</td>
+                                                        <td>-3</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>6-7</td>
+                                                        <td>-2</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>8-9</td>
+                                                        <td>-1</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>10-11</td>
+                                                        <td>+0</td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <div class="col col-12 col-sm-6">
+                                            <div class="table-responsive">
+                                                <table class="table table-striped">
+                                                    <tr>
+                                                        <td>12-13</td>
+                                                        <td>+1</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>14-15</td>
+                                                        <td>+2</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>16-17</td>
+                                                        <td>+3</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>18-19</td>
+                                                        <td>+4</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>20-21</td>
+                                                        <td>+5</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>22-23</td>
+                                                        <td>+6</td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <label for="ability-score-modifier-calculator">Ability Score Modifier
+                                                Calculator</label>
+                                            <div class="input-group mb-3">
+                                                <input id="ability-score-modifier-calculator" type="text"
+                                                    class="form-control" placeholder="Ability Score"
+                                                    aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text"
+                                                        id="ability-score-modifier-calculator-result">0</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-12 col-md-4">
+                    <div class="accordion" id="accordion-skills">
+                        <div class="card border-bottom">
+                            <div class="card-header">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link" type="button" data-toggle="collapse"
+                                        data-target="#collapse-skills" aria-expanded="true"
+                                        aria-controls="collapse-skills">
+                                        Skills
+                                    </button>
+                                </h5>
+                            </div>
+
+                            <div id="collapse-skills" class="collapse show" data-parent="#accordion-skills">
+                                <div class="card-body">
+                                    <div class="table-responsive">
+                                        <table class="table table-striped">
+                                            <tr>
+                                                <td><span data-toggle="tooltip" data-placement="top"
+                                                        title="Strength measures bodily power and natural athleticism">Strength</span>
+                                                </td>
+                                                <td>Athletics</td>
+                                            </tr>
+                                            <tr>
+                                                <td><span data-toggle="tooltip" data-placement="top"
+                                                        title="Dexterity measures agility, reflexes, balance and poise">Dexterity</span>
+                                                </td>
+                                                <td>
+                                                    Athletics<br />
+                                                    Acrobatics<br />
+                                                    Sleight of Hand<br />
+                                                    Stealth<br />
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><span data-toggle="tooltip" data-placement="top"
+                                                        title="Constitution measures natural health, stamina and vital force">Constitution</span>
+                                                </td>
+                                                <td><em class="text-muted">Consitution has no associated skills</em>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><span data-toggle="tooltip" data-placement="top"
+                                                        title="Intelligence measures mental acuity, information recall and analytical skills">Intelligence</span>
+                                                </td>
+                                                <td>
+                                                    Arcana<br />
+                                                    History<br />
+                                                    Investigation<br />
+                                                    Nature<br />
+                                                    Religion<br />
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><span data-toggle="tooltip" data-placement="top"
+                                                        title="Wisdom measures awareness, intuition and insight">Wisdom</span>
+                                                </td>
+                                                <td>
+                                                    Animal Handling<br />
+                                                    Insight<br />
+                                                    Medicine<br />
+                                                    Perception<br />
+                                                    Survival<br />
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><span data-toggle="tooltip" data-placement="top"
+                                                        title="Charisma measures confidence, eloquence and leadership qualities">Charisma</span>
+                                                </td>
+                                                <td>
+                                                    Deception<br />
+                                                    Intimidation<br />
+                                                    Performance<br />
+                                                    Persuasion<br />
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-12 col-md-4">
+                    <div class="accordion" id="accordion-dcs">
+                        <div class="card border-bottom">
+                            <div class="card-header">
+                                <h5 class="mb-0">
+                                    <div class="row no-bottom-margin">
+                                        <div class="col no-top-margin">
+                                            <button class="btn btn-link" type="button" data-toggle="collapse"
+                                                data-target="#collapse-dcs" aria-expanded="true"
+                                                aria-controls="collapse-dcs">
+                                                DCs
+                                            </button>
+                                        </div>
+                                        <div class="col no-top-margin">
+                                            <div class="dice-roller float-right">
+                                                <button type="button" class="btn btn-link" data-notation="1d20"><span
+                                                        class="badge badge-primary badge-pill">1d20
+                                                        <i class="fas fa-dice fa-lg"></i></span></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </h5>
+                            </div>
+
+                            <div id="collapse-dcs" class="collapse show" data-parent="#accordion-dcs">
+                                <div class="card-body">
+                                    <div class="table-responsive">
+                                        <table class="table table-striped">
+                                            <tr>
+                                                <th>Task Difficulty</th>
+                                                <th>DC</th>
+                                            </tr>
+                                            <tr>
+                                                <td>Very Easy</td>
+                                                <td>5</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Easy</td>
+                                                <td>10</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Medium</td>
+                                                <td>15</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Hard</td>
+                                                <td>20</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Very Hard</td>
+                                                <td>25</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Nearly Impossible</td>
+                                                <td>30</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <p><em class='text-muted'>Click headings to collapse cards</em></p>
+                <p><em class='text-muted'>Hover over/click on text with red underline to see further details</em></p>
+                <!-- <p><em class='text-muted'>click and drag cards to move them around</em></p> -->
+            </div>
+        </div>
+
+        <!-- ATTRIBUTES, SKILLS AND DC -->
+
+
+        <hr>
+
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+            <label class="form-check-label" for="defaultCheck1">
+                Enable dice rollers for weapon damage
+            </label>
+        </div>
+
+        <div id="row-4" class="row">
+
         </div>
     </div>
 
@@ -189,753 +1008,6 @@
             </tr>
         </tbody>
     </table>
-
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col">
-                <p><em class='text-muted'>Click headings to collapse cards</em></p>
-                <p><em class='text-muted'>Hover over/click on text with red underline to see further details</em></p>
-                <!-- <p><em class='text-muted'>click and drag cards to move them around</em></p> -->
-            </div>
-        </div>
-
-        <!-- !!!!!!!!!!!!!ATTRIBUTES, SKILLS AND DC!!!!!!!!!!!!!!! -->
-        <div id='row-1' class="row">
-            <div class="col col-12 col-md-4">
-                <div class="accordion" id="accordion-attributes">
-                    <div class="card border-bottom">
-                        <div class="card-header">
-                            <h5 class="mb-0">
-                                <div class="row no-bottom-margin">
-                                    <div class="col no-top-margin">
-                                        <button class="btn btn-link" type="button" data-toggle="collapse"
-                                            data-target="#collapse-attributes" aria-expanded="true"
-                                            aria-controls="collapse-attributes">
-                                            Attributes & Modifiers
-                                        </button>
-                                    </div>
-                                    <div class="col no-top-margin">
-                                        <div class="float-right">
-                                            <br class="dice-roller" data-notation="4d6-L" />
-                                        </div>
-                                    </div>
-                                </div>
-                            </h5>
-                        </div>
-
-                        <div id="collapse-attributes" class="collapse show" data-parent="#accordion-attributes">
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col col-12 col-sm-6">
-                                        <div class="table-responsive">
-                                            <table class="table table-striped">
-                                                <tr>
-                                                    <td>1</td>
-                                                    <td>-5</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>2-3</td>
-                                                    <td>-4</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>4-5</td>
-                                                    <td>-3</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>6-7</td>
-                                                    <td>-2</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>8-9</td>
-                                                    <td>-1</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>10-11</td>
-                                                    <td>+0</td>
-                                                </tr>
-                                            </table>
-                                        </div>
-                                    </div>
-                                    <div class="col col-12 col-sm-6">
-                                        <div class="table-responsive">
-                                            <table class="table table-striped">
-                                                <tr>
-                                                    <td>12-13</td>
-                                                    <td>+1</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>14-15</td>
-                                                    <td>+2</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>16-17</td>
-                                                    <td>+3</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>18-19</td>
-                                                    <td>+4</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>20-21</td>
-                                                    <td>+5</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>22-23</td>
-                                                    <td>+6</td>
-                                                </tr>
-                                            </table>
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col">
-                                        <label for="ability-score-modifier-calculator">Ability Score Modifier
-                                            Calculator</label>
-                                        <div class="input-group mb-3">
-                                            <input id="ability-score-modifier-calculator" type="text"
-                                                class="form-control" placeholder="Ability Score"
-                                                aria-label="Recipient's username" aria-describedby="basic-addon2">
-                                            <div class="input-group-append">
-                                                <span class="input-group-text"
-                                                    id="ability-score-modifier-calculator-result">0</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col col-12 col-md-4">
-                <div class="accordion" id="accordion-skills">
-                    <div class="card border-bottom">
-                        <div class="card-header">
-                            <h5 class="mb-0">
-                                <button class="btn btn-link" type="button" data-toggle="collapse"
-                                    data-target="#collapse-skills" aria-expanded="true" aria-controls="collapse-skills">
-                                    Skills
-                                </button>
-                            </h5>
-                        </div>
-
-                        <div id="collapse-skills" class="collapse show" data-parent="#accordion-skills">
-                            <div class="card-body">
-                                <div class="table-responsive">
-                                    <table class="table table-striped">
-                                        <tr>
-                                            <td><span data-toggle="tooltip" data-placement="top"
-                                                    title="Strength measures bodily power and natural athleticism">Strength</span>
-                                            </td>
-                                            <td>Athletics</td>
-                                        </tr>
-                                        <tr>
-                                            <td><span data-toggle="tooltip" data-placement="top"
-                                                    title="Dexterity measures agility, reflexes, balance and poise">Dexterity</span>
-                                            </td>
-                                            <td>
-                                                Athletics<br />
-                                                Acrobatics<br />
-                                                Sleight of Hand<br />
-                                                Stealth<br />
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td><span data-toggle="tooltip" data-placement="top"
-                                                    title="Constitution measures natural health, stamina and vital force">Constitution</span>
-                                            </td>
-                                            <td><em class="text-muted">Consitution has no associated skills</em></td>
-                                        </tr>
-                                        <tr>
-                                            <td><span data-toggle="tooltip" data-placement="top"
-                                                    title="Intelligence measures mental acuity, information recall and analytical skills">Intelligence</span>
-                                            </td>
-                                            <td>
-                                                Arcana<br />
-                                                History<br />
-                                                Investigation<br />
-                                                Nature<br />
-                                                Religion<br />
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td><span data-toggle="tooltip" data-placement="top"
-                                                    title="Wisdom measures awareness, intuition and insight">Wisdom</span>
-                                            </td>
-                                            <td>
-                                                Animal Handling<br />
-                                                Insight<br />
-                                                Medicine<br />
-                                                Perception<br />
-                                                Survival<br />
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td><span data-toggle="tooltip" data-placement="top"
-                                                    title="Charisma measures confidence, eloquence and leadership qualities">Charisma</span>
-                                            </td>
-                                            <td>
-                                                Deception<br />
-                                                Intimidation<br />
-                                                Performance<br />
-                                                Persuasion<br />
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col col-12 col-md-4">
-                <div class="accordion" id="accordion-dcs">
-                    <div class="card border-bottom">
-                        <div class="card-header">
-                            <h5 class="mb-0">
-                                <div class="row no-bottom-margin">
-                                    <div class="col no-top-margin">
-                                        <button class="btn btn-link" type="button" data-toggle="collapse"
-                                            data-target="#collapse-dcs" aria-expanded="true"
-                                            aria-controls="collapse-dcs">
-                                            DCs
-                                        </button>
-                                    </div>
-                                    <div class="col no-top-margin">
-                                        <div class="dice-roller float-right">
-                                            <button type="button" class="btn btn-link" data-notation="1d20"><span
-                                                    class="badge badge-primary badge-pill">1d20
-                                                    <i class="fas fa-dice fa-lg"></i></span></button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </h5>
-                        </div>
-
-                        <div id="collapse-dcs" class="collapse show" data-parent="#accordion-dcs">
-                            <div class="card-body">
-                                <div class="table-responsive">
-                                    <table class="table table-striped">
-                                        <tr>
-                                            <th>Task Difficulty</th>
-                                            <th>DC</th>
-                                        </tr>
-                                        <tr>
-                                            <td>Very Easy</td>
-                                            <td>5</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Easy</td>
-                                            <td>10</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Medium</td>
-                                            <td>15</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Hard</td>
-                                            <td>20</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Very Hard</td>
-                                            <td>25</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Nearly Impossible</td>
-                                            <td>30</td>
-                                        </tr>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <hr>
-        </div>
-
-        <hr>
-
-        <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-            <label class="form-check-label" for="defaultCheck1">
-                Enable dice rollers for weapon damage
-            </label>
-        </div>
-
-        <!-- !!!!!!!!!!!!!!SIMPLE WEAPONS!!!!!!!!!!!!!!!! -->
-        <div id='row-2' class="row">
-            <div class="col">
-                <div class="accordion" id="accordion-simple-melee-weapons">
-                    <div class="card border-bottom">
-                        <div class="card-header">
-                            <h5 class="mb-0">
-                                <button class="btn btn-link" type="button" data-toggle="collapse"
-                                    data-target="#collapse-simple-melee-weapons" aria-expanded="true"
-                                    aria-controls="collapse-simple-melee-weapons">
-                                    Simple Melee Weapons
-                                </button>
-                            </h5>
-                        </div>
-
-                        <div id="collapse-simple-melee-weapons" class="collapse show"
-                            data-parent="#accordion-simple-melee-weapons">
-                            <div class="card-body">
-                                <table class="table table-striped">
-                                    <thead>
-                                        <tr>
-                                            <th>Weapon</th>
-                                            <th>Cost</th>
-                                            <th>Damage</th>
-                                            <th>Weight</th>
-                                            <th>Properties</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>Club</td>
-                                            <td>1 sp</td>
-                                            <td><br class="dice-roller" data-notation="1d4" /> bludgeoning</td>
-                                            <td>2 lb.</td>
-                                            <td><br class="info-light" /></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Dagger</td>
-                                            <td>2 gp</td>
-                                            <td>1d4 piercing</td>
-                                            <td>1 lb.</td>
-                                            <td><br class="info-finesse" />, <br class="info-light" />, <br
-                                                    class="info-thrown" />
-                                                (range 20/60)</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Greatclub</td>
-                                            <td>2 sp</td>
-                                            <td>1d8 bludgeoning</td>
-                                            <td>10 lb.</td>
-                                            <td><br class="info-two-handed" /></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Handaxe</td>
-                                            <td>5 gp</td>
-                                            <td>1d6 slashing</td>
-                                            <td>2 lb.</td>
-                                            <td><br class="info-light" />, <br class="info-thrown" /> (range 20/60)</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Javelin</td>
-                                            <td>5 sp</td>
-                                            <td>1d6 piercing</td>
-                                            <td>2 lb.</td>
-                                            <td><br class="info-thrown" /> (range 30/120)</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Hammer</td>
-                                            <td>2 gp</td>
-                                            <td>1d4 bludgeoning</td>
-                                            <td>2 lb.</td>
-                                            <td><br class="info-light" />, <br class="info-thrown" /> (range 20/60)</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Mace</td>
-                                            <td>5 gp</td>
-                                            <td>1d6 bludgeoning</td>
-                                            <td>4 lb.</td>
-                                            <td>—</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Quarterstaff</td>
-                                            <td>2 sp</td>
-                                            <td>1d6 bludgeoning</td>
-                                            <td>4 lb.</td>
-                                            <td><br class="info-versatile" /> (1d8)</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Sickle</td>
-                                            <td>1 gp</td>
-                                            <td>1d4 slashing</td>
-                                            <td>2 lb.</td>
-                                            <td><br class="info-light" /></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Spear</td>
-                                            <td>1 gp</td>
-                                            <td>1d6 piercing</td>
-                                            <td>3 lb.</td>
-                                            <td><br class="info-thrown" /> (range 20/60), <br class="info-versatile" /> (1d8)</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="accordion" id="accordion-simple-ranger-weapons">
-                    <div class="card border-bottom">
-                        <div class="card-header">
-                            <h5 class="mb-0">
-                                <button class="btn btn-link" type="button" data-toggle="collapse"
-                                    data-target="#collapse-simple-ranger-weapons" aria-expanded="true"
-                                    aria-controls="collapse-simple-ranger-weapons">
-                                    Simple Ranged Weapons
-                                </button>
-                            </h5>
-                        </div>
-
-                        <div id="collapse-simple-ranger-weapons" class="collapse show"
-                            data-parent="#accordion-simple-ranger-weapons">
-                            <div class="card-body">
-                                <table class="table table-striped">
-                                    <thead>
-                                        <tr>
-                                            <th>Weapon</th>
-                                            <th>Cost</th>
-                                            <th>Damage</th>
-                                            <th>Weight</th>
-                                            <th>Properties</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>Crossbow, light<br>
-                                            </td>
-                                            <td>25 gp</td>
-                                            <td>1d8 piercing</td>
-                                            <td>5 lb.</td>
-                                            <td><br class="info-ammunition" /> (range 80/320), <br
-                                                    class="info-loading" />,
-                                                <br class="info-two-handed" /></td>
-                                        </tr>
-                                        <tr>
-                                            <td> Dart </td>
-                                            <td>5 cp</td>
-                                            <td>1d4 piercing</td>
-                                            <td>1/4 lb.</td>
-                                            <td><br class="info-finesse" />, <br class="info-thrown" /> (range 20/60)
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td> Shortbow </td>
-                                            <td>25 gp</td>
-                                            <td>1d6 piercing</td>
-                                            <td>2 lb.</td>
-                                            <td><br class="info-ammunition" /> (range 80/320), <br
-                                                    class="info-two-handed" /></td>
-                                        </tr>
-                                        <tr>
-                                            <td> Sling </td>
-                                            <td>1 sp</td>
-                                            <td>1d4 bludgeoning</td>
-                                            <td>—</td>
-                                            <td><br class="info-ammunition" /> (range 30/120)</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <hr>
-        </div>
-
-        <!-- !!!!!!!!!!!!!!MARTIAL WEAPONS!!!!!!!!!!!!!!!!!! -->
-        <div id='row-3' class="row">
-            <div class="col">
-                <div class="accordion" id="accordion-martial-melee-weapons">
-                    <div class="card border-bottom">
-                        <div class="card-header">
-                            <h5 class="mb-0">
-                                <button class="btn btn-link" type="button" data-toggle="collapse"
-                                    data-target="#collapse-martial-melee-weapons" aria-expanded="true"
-                                    aria-controls="collapse-martial-melee-weapons">
-                                    Martial Melee Weapons
-                                </button>
-                            </h5>
-                        </div>
-
-                        <div id="collapse-martial-melee-weapons" class="collapse show"
-                            data-parent="#accordion-martial-melee-weapons">
-                            <div class="card-body">
-                                <table class="table table-striped">
-                                    <thead>
-                                        <tr>
-                                            <th>Weapon</th>
-                                            <th>Cost</th>
-                                            <th>Damage</th>
-                                            <th>Weight</th>
-                                            <th>Properties</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>
-                                                Battleaxe
-                                            </td>
-                                            <td>10 gp</td>
-                                            <td>1d8 slashing</td>
-                                            <td>4 lb.</td>
-                                            <td><br class="info-versatile" /> (1d10)</td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                Flail
-                                            </td>
-                                            <td>10 gp</td>
-                                            <td>1d8 bludgeoning</td>
-                                            <td>2 lb.</td>
-                                            <td>—</td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                Glaive
-                                            </td>
-                                            <td>20 gp</td>
-                                            <td>1d10 slashing</td>
-                                            <td>6 lb.</td>
-                                            <td><br class='info-heavy' />, <br class='info-reach' />, <br
-                                                    class='info-two-handed' /></td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                Greataxe
-                                            </td>
-                                            <td>30 gp</td>
-                                            <td>1d12 slashing</td>
-                                            <td>7 lb.</td>
-                                            <td><br class="info-heavy" />, <br class="info-two-handed" /></td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                Greatsword
-                                            </td>
-                                            <td>50 gp</td>
-                                            <td>2d6 slashing</td>
-                                            <td>6 lb.</td>
-                                            <td><br class="info-heavy" />, <br class="info-two-handed" /></td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                Halberd
-                                            </td>
-                                            <td>20 gp</td>
-                                            <td>1d10 slashing</td>
-                                            <td>6 lb.</td>
-                                            <td><br class="info-heavy" />, <br class="info-reach" />, <br
-                                                    class="info-two-handed" /></td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                Lance
-                                            </td>
-                                            <td>10 gp</td>
-                                            <td>1d12 piercing</td>
-                                            <td>6 lb.</td>
-                                            <td><br class="info-reach" />, <br class="info-special" /></td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                Longsword
-                                            </td>
-                                            <td>15 gp</td>
-                                            <td>1d8 slashing</td>
-                                            <td>3 lb.</td>
-                                            <td><br class="info-versatile" /> (1d10)</td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                Maul
-                                            </td>
-                                            <td>10 gp</td>
-                                            <td>2d6 bludgeoning</td>
-                                            <td>10 lb.</td>
-                                            <td><br class="info-heavy" />, <br class="info-two-handed" /></td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                Morningstar
-                                            </td>
-                                            <td>15 gp</td>
-                                            <td>1d8 piercing</td>
-                                            <td>4 lb.</td>
-                                            <td>—</td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                Pike
-                                            </td>
-                                            <td>5 gp</td>
-                                            <td>1d10 piercing</td>
-                                            <td>18 lb.</td>
-                                            <td><br class="info-heavy" />, <br class="info-reach" />, <br
-                                                    class="info-two-handed" /></td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                Rapier
-                                            </td>
-                                            <td>25 gp</td>
-                                            <td>1d8 piercing</td>
-                                            <td>2 lb.</td>
-                                            <td><br class="info-finesse" /></td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                Scimitar
-                                            </td>
-                                            <td>25 gp</td>
-                                            <td>1d6 slashing</td>
-                                            <td>3 lb.</td>
-                                            <td><br class="info-finesse" />, <br class="info-light" /></td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                Shortsword
-                                            </td>
-                                            <td>10 gp</td>
-                                            <td>1d6 piercing</td>
-                                            <td>2 lb.</td>
-                                            <td><br class="info-finesse" />, <br class="info-light" /></td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                Trident
-                                            </td>
-                                            <td>5 gp</td>
-                                            <td>1d6 piercing</td>
-                                            <td>4 lb.</td>
-                                            <td><br class="info-thrown" /> (range 20/60), <br class="info-versatile" />
-                                                (1d8)</td>
-                                        </tr>
-                                        <tr>
-                                            <td>War Pick</td>
-                                            <td>5 gp</td>
-                                            <td>1d8 piercing</td>
-                                            <td>2 lb.</td>
-                                            <td>—</td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                Warhammer
-                                            </td>
-                                            <td>15 gp</td>
-                                            <td>1d8 bludgeoning</td>
-                                            <td>2 lb.</td>
-                                            <td><br class="info-versatile" /> (1d10)</td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                Whip
-                                            </td>
-                                            <td>2 gp</td>
-                                            <td>1d4 slashing</td>
-                                            <td>3 lb.</td>
-                                            <td><br class="info-finesse" />, <br class="info-reach" /></td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="accordion" id="accordion-martial-range-weapons">
-                    <div class="card border-bottom">
-                        <div class="card-header">
-                            <h5 class="mb-0">
-                                <button class="btn btn-link" type="button" data-toggle="collapse"
-                                    data-target="#collapse-martial-range-weapons" aria-expanded="true"
-                                    aria-controls="collapse-martial-range-weapons">
-                                    Martial Ranged Weapons
-                                </button>
-                            </h5>
-                        </div>
-
-                        <div id="collapse-martial-range-weapons" class="collapse show"
-                            data-parent="#accordion-martial-range-weapons">
-                            <div class="card-body">
-                                <table class="table table-striped">
-                                    <thead>
-                                        <tr>
-                                            <th>Weapon</th>
-                                            <th>Cost</th>
-                                            <th>Damage</th>
-                                            <th>Weight</th>
-                                            <th>Properties</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>
-                                                Blowgun
-                                            </td>
-                                            <td>10 gp</td>
-                                            <td>1 piercing</td>
-                                            <td>1 lb.</td>
-                                            <td>
-                                                <br class="info-ammunition" />
-                                                (range 25/100), <br class="info-loading" /></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Crossbow, hand</td>
-                                            <td>75 gp</td>
-                                            <td>1d6 piercing</td>
-                                            <td>3 lb.</td>
-                                            <td>
-                                                <br class="info-ammunition" />
-                                                (range 30/120), <br class="info-light" />, <br class="info-loading" />
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>Crossbow, heavy</td>
-                                            <td>50 gp</td>
-                                            <td>1d10 piercing</td>
-                                            <td>18 lb.</td>
-                                            <td>
-                                                <br class="info-ammunition" />
-                                                (range 100/400), <br class="info-heavy" />, <br class="info-loading" />,
-                                                <br class="info-two-handed" /></td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                Longbow
-                                            </td>
-                                            <td>50 gp</td>
-                                            <td>1d8 piercing</td>
-                                            <td>2 lb.</td>
-                                            <td>
-                                                <br class="info-ammunition" />
-                                                (range 150/600), <br class="info-heavy" />, <br
-                                                    class="info-two-handed" /></td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                Net
-                                            </td>
-                                            <td>1 gp</td>
-                                            <td>—</td>
-                                            <td>3 lb.</td>
-                                            <td><br class="info-special" />, <br class="info-thrown" /> (range 5/15)
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <hr>
-        </div>
-
-        <div id="row-4" class="row">
-
-        </div>
-    </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
