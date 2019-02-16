@@ -222,7 +222,7 @@
                 aria-controls="collapse-equipment">
                 Equipment
             </a>
-            <span class='subheading'>Listings, values and weights for armour and other non-weapon adventuring gear</span>
+            <span class='subheading'>Listings, values and weights for armour, ammunition, and other non-weapon adventuring gear</span>
         </h2>
         <div class="collapse" id="collapse-equipment">
             <div class="row">
@@ -283,16 +283,15 @@
                             <tr>
                                 <td>Hide</td>
                                 <td>10 gp</td>
-                                <td>12/2</td>
+                                <td>12 <br class="info-max-dex-2" /></td>
                                 <td>—</td>
                                 <td>—</td>
                                 <td>12 lb.</td>
                             </tr>
                             <tr>
-                                <td>Chain
-                                        shirt</td>
+                                <td>Chain shirt</td>
                                 <td>50 gp</td>
-                                <td>13/2</td>
+                                <td>13 <br class="info-max-dex-2" /></td>
                                 <td>—</td>
                                 <td>—</td>
                                 <td>20 lb.</td>
@@ -300,7 +299,7 @@
                             <tr>
                                 <td>Scale mail</td>
                                 <td>50 gp</td>
-                                <td>14/2</td>
+                                <td>14 <br class="info-max-dex-2" /></td>
                                 <td>—</td>
                                 <td><br class="info-disadvantage-on-stealth" /></td>
                                 <td>45 lb.</td>
@@ -308,7 +307,7 @@
                             <tr>
                                 <td>Breastplate</td>
                                 <td>400 gp</td>
-                                <td>14/2</td>
+                                <td>14 <br class="info-max-dex-2" /></td>
                                 <td>—</td>
                                 <td>—</td>
                                 <td>20 lb.</td>
@@ -316,7 +315,7 @@
                             <tr>
                                 <td>Half plate</td>
                                 <td>750 gp</td>
-                                <td>15/2</td>
+                                <td>15 <br class="info-max-dex-2" /></td>
                                 <td>—</td>
                                 <td><br class="info-disadvantage-on-stealth" /></td>
                                 <td>40 lb.</td>
@@ -938,6 +937,7 @@
                 aria-controls="collapse-weapons">
                 Weapons
             </a>
+            <span class='subheading'>Listings, values and weights for weapons</span>
         </h2>
         <div class="collapse" id="collapse-weapons">
             <!-- SIMPLE WEAPONS -->
@@ -958,7 +958,7 @@
                             <tr>
                                 <td>Club</td>
                                 <td>1 sp</td>
-                                <td><br class="dice-roller" data-notation="1d4" /> bludgeoning</td>
+                                <td>1d4 bludgeoning</td>
                                 <td>2 lb.</td>
                                 <td><br class="info-light" /></td>
                             </tr>
@@ -1345,6 +1345,7 @@
                 aria-controls="collapse-attributes-and-skills">
                 Abilities, Skills & DCs
             </a>
+            <span class='subheading'>Ability score value-to-modifier, ability score modifier calculator, skills to ability score, suggested DC to difficulties</span>
         </h2>
         <div class="collapse" id="collapse-attributes-and-skills">
             <div class="row">
@@ -1613,6 +1614,7 @@
                 aria-controls="collapse-conditions">
                 Conditions
             </a>
+            <span class='subheading'>Listing of the conditions a creature can be affected by and their effects</span>
         </h2>
         <div class="collapse" id="collapse-conditions">
             <div class="row">
@@ -1830,11 +1832,13 @@
 
         <hr>
 
+        <!-- TERRAIN AND LANDSCAPE -->
         <h2>
             <a data-toggle="collapse" href="#collapse-landscape-and-terrain" role="button" aria-expanded="false"
                 aria-controls="collapse-landscape-and-terrain">
                 Landscape & Terrain
             </a>
+            <span class='subheading'>Suggested DCs for tracking</span>
         </h2>
         <div class="collapse" id="collapse-landscape-and-terrain">
             <div class="row">
@@ -1911,8 +1915,9 @@
             $('.info-reach').replaceWith('<span data-toggle="tooltip" data-placement="top" title="This weapon adds 5 feet to your reach when you attack with it, as well as when determining your reach for opportunity attacks with it">Reach</span>')
             $('.info-two-handed').replaceWith('<span data-toggle="tooltip" data-placement="top" title="This weapon requires two hands when you attack with it">Two-Handed</span>')
 
-            // wireup tooltips for weapons
+            // wireup tooltips for armour
             $('.info-disadvantage-on-stealth').replaceWith('<span data-toggle="tooltip" data-placement="top" title="When wearing this armour, the user has disadvantage on DEX (Stealth) checks">DIS</span>')
+            $('.info-max-dex-2').replaceWith('<span data-toggle="tooltip" data-placement="top" title="When wearing this armour, the maximum AC benefit the wearer gains from their DEX modifier is +2">(+2)</span>')
 
             // turn dice roller elements into the correct markup
             $('br.dice-roller').each(function () {
