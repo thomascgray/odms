@@ -50,3 +50,13 @@
 h2 .subheading {
   font-size: 0.4em;
 }
+
+span.damage-notation {
+  font-weight: bold;
+}
+
+span.damage-notation.d4 { color: #16a085; }
+span.damage-notation.d6 { color: #f39c12; }
+span.damage-notation.d8 { color: #2980b9; }
+span.damage-notation.d10 { color: #c0392b; }
+span.damage-notation.d12 { color: #8e44ad; }
