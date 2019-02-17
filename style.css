@@ -64,3 +64,13 @@ span.damage-notation.d12 { color: #8e44ad; }
 footer span {
   font-size: 0.8em;
 }
+
+table.order-of-operations{
+  table-layout: fixed;
+    width: 100%;
+    text-align: center;
+}
+table.order-of-operations td {
+  border: 1px solid #c0392b;
+  padding: 1em;
+}
