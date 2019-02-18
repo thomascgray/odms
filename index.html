@@ -1810,11 +1810,11 @@
                     Travel, Terrain & Landscape
                 </a>
                 <br class="d-md-none">
-                <span class='subheading'>Suggested DCs for tracking</span>
+                <span class='subheading'>Suggested DCs for tracking, travel times, weather effects and random weather</span>
             </h2>
             <div class="collapse" id="collapse-landscape-and-terrain">
                 <div class="row">
-                    <div class="col">
+                    <div class="col col-md-2">
                         <h3>Tracking DCs</h3>
                         <p><em> Player makes a WIS (Survival) check to track a creature</em></p>
                         <table class="table table-striped table-responsive">
@@ -1844,6 +1844,120 @@
                                 <tr>
                                     <td>Creature left a trail</td>
                                     <td>-5</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="col">
+                        <h3>Travel Times</h3>
+                        <p>Party takes 10 hours to travel 24 miles a day (additional 8 hours for rest and 6 hours to make/break camp, prepare meals, forage, and hunt as time permits).</p>
+                        <p><strong>Difcult terrain halves your speed</strong></p>
+                        <table class=" table table-striped table-responsive">
+                            <thead>
+                                <tr>
+                                    <th>Pace</th>
+                                    <th>Distance / Hour</th>
+                                    <th>Distance / Day</th>
+                                    <th>Effects</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Slow</td>
+                                    <td>2 miles</td>
+                                    <td>18 miles</td>
+                                    <td>Can use Stealth</td>
+                                </tr>
+                                <tr>
+                                    <td>Normal</td>
+                                    <td>3 miles</td>
+                                    <td>24 miles</td>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <td>Fast</td>
+                                    <td>4 miles</td>
+                                    <td>30 miles</td>
+                                    <td>-5 on Passive WIS (Perception) checks</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="col">
+                        <h3>Weather Effects</h3>
+                        <table class="table table-striped table-responsive">
+                            <thead>
+                                <tr>
+                                    <th>Weather</th>
+                                    <th>Effects</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Extreme Cold</td>
+                                    <td>Each hour, creatures must pass a DC 10 CON saving throw, or gain 1 point of exhaustion. Creatures with cold resistance or those wearing specialist cold weather equipment (gloves, thick coat, etc.) auto succeed.</td>
+                                </tr>
+                                <tr>
+                                    <td>Extreme Heat</td>
+                                    <td>Each hour, creatures must pass a CON saving throw, or gain 1 point of exhaustion. DC starts at 5, and goes up by 5 for every hour of exposure to the extreme heat. Creatures wearing armour or thick clothing have disadvantage on the roll. Creatures with heat resistance auto succeed.</td>
+                                </tr>
+                                <tr>
+                                    <td>Strong Wind</td>
+                                    <td>Disadvantage on ranged weapon attacks and WIS (Perception) checks based on hearing. A strong wind also extinguishes open flames, disperses fog and makes flying via non-magical means extremely difficult.</td>
+                                </tr>
+                                <tr>
+                                    <td>Dust/Sand Storm</td>
+                                    <td>Often created via strong winds, a dust/sand storm causes disadvantage on ranged weapon attacks and WIS (Perception) checks based on sight.</td>
+                                </tr>
+                                <tr>
+                                    <td>Heavy Rain/Snow</td>
+                                    <td>Disadvantage on WIS (Perception) checks based on sight and hearing, and extinguishes open flames.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="col">
+                        <h3>Random Weather</h3>
+
+                        <table class="table table-striped table-responsive">
+                            <thead>
+                                <tr>
+                                    <th>% Chance</th>
+                                    <th>Cold Climate</th>
+                                    <th>Moderate Climate</th>
+                                    <th>Hot Climate</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td align="center">01-70</td>
+                                    <td>Cold, calm</td>
+                                    <td>Normal for season</td>
+                                    <td>Hot, calm</td>
+                                </tr>
+                                <tr>
+                                    <td align="center">71-80</td>
+                                    <td>Heat wave (01-30) or<br>cold snap (31-100)</td>
+                                    <td>Heat wave (01-50) or<br>cold snap (51-100)</td>
+                                    <td>Hot, windy</td>
+                                </tr>
+                                <tr>
+                                    <td align="center">81-90</td>
+                                    <td>Precipitation (snow)</td>
+                                    <td>Precipitation (normal for season)</td>
+                                    <td>Hot, windy</td>
+                                </tr>
+                                <tr>
+                                    <td align="center">91-99</td>
+                                    <td>Snowstorm</td>
+                                    <td>Thunderstorm, snowstorm</td>
+                                    <td>Duststorm</td>
+                                </tr>
+                                <tr>
+                                    <td align="center">100</td>
+                                    <td>Blizzard</td>
+                                    <td>Windstorm, blizzard, hurricane, tornado</td>
+                                    <td>Downpour</td>
                                 </tr>
                             </tbody>
                         </table>
