@@ -32,15 +32,26 @@
             </h2>
             <div class="collapse" id="collapse-combat">
                 <h3>Order of Operations</h3>
-                <table class="order-of-operations">
+                <table class="order-of-operations d-none d-sm-table">
                     <tr>
                         <td>Determine Surprise</td>
+                        <td><i class="fas fa-angle-double-right"></i></td>
                         <td>Establish Positions</td>
+                        <td><i class="fas fa-angle-double-right"></i></td>
                         <td>Roll Initiative</td>
+                        <td><i class="fas fa-angle-double-right"></i></td>
                         <td>Take Turns</td>
+                        <td><i class="fas fa-angle-double-right"></i></td>
                         <td>Begin the Next Round</td>
                     </tr>
                 </table>
+                <ol class="d-xs-block d-sm-none">
+                    <li>Determine Surprise</li>
+                    <li>Establish Positions</li>
+                    <li>Roll Initiative</li>
+                    <li>Take Turns</li>
+                    <li>Begin the Next Round</li>
+                </ol>
                 <div class="row">
                     <div class="col col-12 col-md-6">
                         <h3>Actions in Combat</h3>
@@ -247,268 +258,292 @@
                 <div class="row">
                     <div class="col col-12 col-md-5">
                         <h3>Light Armour</h3>
-                        <table class="table table-striped table-responsive">
-                            <thead>
-                                <tr>
-                                    <th>Armor</th>
-                                    <th>Value</th>
-                                    <th>Base AC</th>
-                                    <th>Strength</th>
-                                    <th>Stealth</th>
-                                    <th>Weight</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Padded</td>
-                                    <td>5 gp</td>
-                                    <td>11</td>
-                                    <td>—</td>
-                                    <td><br class="info-disadvantage-on-stealth" /></td>
-                                    <td>8 lb.</td>
-                                </tr>
-                                <tr>
-                                    <td>Leather</td>
-                                    <td>10 gp</td>
-                                    <td>11</td>
-                                    <td>—</td>
-                                    <td>—</td>
-                                    <td>10 lb.</td>
-                                </tr>
-                                <tr>
-                                    <td>Studded leather</td>
-                                    <td>45 gp</td>
-                                    <td>12</td>
-                                    <td>—</td>
-                                    <td>—</td>
-                                    <td>13 lb.</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                        <div class="table-responsive">
+
+                            <table class="table table-striped ">
+                                <thead>
+                                    <tr>
+                                        <th>Armor</th>
+                                        <th>Cost <i class="fas fa-coins"></i></th>
+                                        <th>Base AC <i class="fas fa-shield-alt"></i></th>
+                                        <th>Strength <i class="fas fa-fist-raised"></i></th>
+                                        <th>Stealth <i class="fas fa-eye-slash"></i></th>
+                                        <th>Weight <i class="fas fa-weight-hanging"></i></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Padded</td>
+                                        <td>5 gp</td>
+                                        <td>11</td>
+                                        <td>—</td>
+                                        <td><br class="info-disadvantage-on-stealth" /></td>
+                                        <td>8 lb.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Leather</td>
+                                        <td>10 gp</td>
+                                        <td>11</td>
+                                        <td>—</td>
+                                        <td>—</td>
+                                        <td>10 lb.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Studded leather</td>
+                                        <td>45 gp</td>
+                                        <td>12</td>
+                                        <td>—</td>
+                                        <td>—</td>
+                                        <td>13 lb.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
 
                         <h3>Medium Armour</h3>
-                        <table class="table table-striped table-responsive">
-                            <thead>
-                                <tr>
-                                    <th>Armor</th>
-                                    <th>Value</th>
-                                    <th>Base AC</th>
-                                    <th>Strength</th>
-                                    <th>Stealth</th>
-                                    <th>Weight</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Hide</td>
-                                    <td>10 gp</td>
-                                    <td>12 <br class="info-max-dex-2" /></td>
-                                    <td>—</td>
-                                    <td>—</td>
-                                    <td>12 lb.</td>
-                                </tr>
-                                <tr>
-                                    <td>Chain shirt</td>
-                                    <td>50 gp</td>
-                                    <td>13 <br class="info-max-dex-2" /></td>
-                                    <td>—</td>
-                                    <td>—</td>
-                                    <td>20 lb.</td>
-                                </tr>
-                                <tr>
-                                    <td>Scale mail</td>
-                                    <td>50 gp</td>
-                                    <td>14 <br class="info-max-dex-2" /></td>
-                                    <td>—</td>
-                                    <td><br class="info-disadvantage-on-stealth" /></td>
-                                    <td>45 lb.</td>
-                                </tr>
-                                <tr>
-                                    <td>Breastplate</td>
-                                    <td>400 gp</td>
-                                    <td>14 <br class="info-max-dex-2" /></td>
-                                    <td>—</td>
-                                    <td>—</td>
-                                    <td>20 lb.</td>
-                                </tr>
-                                <tr>
-                                    <td>Half plate</td>
-                                    <td>750 gp</td>
-                                    <td>15 <br class="info-max-dex-2" /></td>
-                                    <td>—</td>
-                                    <td><br class="info-disadvantage-on-stealth" /></td>
-                                    <td>40 lb.</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                        <div class="table-responsive">
+
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Armor</th>
+                                        <th>Cost <i class="fas fa-coins"></i></th>
+                                        <th>Base AC <i class="fas fa-shield-alt"></i></th>
+                                        <th>Strength <i class="fas fa-fist-raised"></i></th>
+                                        <th>Stealth <i class="fas fa-eye-slash"></i></th>
+                                        <th>Weight <i class="fas fa-weight-hanging"></i></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Hide</td>
+                                        <td>10 gp</td>
+                                        <td>12 <br class="info-max-dex-2" /></td>
+                                        <td>—</td>
+                                        <td>—</td>
+                                        <td>12 lb.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Chain shirt</td>
+                                        <td>50 gp</td>
+                                        <td>13 <br class="info-max-dex-2" /></td>
+                                        <td>—</td>
+                                        <td>—</td>
+                                        <td>20 lb.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Scale mail</td>
+                                        <td>50 gp</td>
+                                        <td>14 <br class="info-max-dex-2" /></td>
+                                        <td>—</td>
+                                        <td><br class="info-disadvantage-on-stealth" /></td>
+                                        <td>45 lb.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Breastplate</td>
+                                        <td>400 gp</td>
+                                        <td>14 <br class="info-max-dex-2" /></td>
+                                        <td>—</td>
+                                        <td>—</td>
+                                        <td>20 lb.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Half plate</td>
+                                        <td>750 gp</td>
+                                        <td>15 <br class="info-max-dex-2" /></td>
+                                        <td>—</td>
+                                        <td><br class="info-disadvantage-on-stealth" /></td>
+                                        <td>40 lb.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
 
                         <h3>Heavy Armour</h3>
-                        <table class="table table-striped table-responsive">
-                            <thead>
-                                <tr>
-                                    <th>Armor</th>
-                                    <th>Value</th>
-                                    <th>Base AC</th>
-                                    <th>Strength</th>
-                                    <th>Stealth</th>
-                                    <th>Weight</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Ring mail</td>
-                                    <td>30 gp</td>
-                                    <td>14</td>
-                                    <td>—</td>
-                                    <td><br class="info-disadvantage-on-stealth" /></td>
-                                    <td>40 lb.</td>
-                                </tr>
-                                <tr>
-                                    <td>Chain mail</td>
-                                    <td>75 gp</td>
-                                    <td>16</td>
-                                    <td>13</td>
-                                    <td><br class="info-disadvantage-on-stealth" /></td>
-                                    <td>55 lb.</td>
-                                </tr>
-                                <tr>
-                                    <td>Splint</td>
-                                    <td>200 gp</td>
-                                    <td>17</td>
-                                    <td>15</td>
-                                    <td><br class="info-disadvantage-on-stealth" /></td>
-                                    <td>60 lb.</td>
-                                </tr>
-                                <tr>
-                                    <td>Plate</td>
-                                    <td>1,500 gp</td>
-                                    <td>18</td>
-                                    <td>15</td>
-                                    <td><br class="info-disadvantage-on-stealth" /></td>
-                                    <td>65 lb.</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                        <div class="table-responsive">
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Armor</th>
+                                        <th>Cost <i class="fas fa-coins"></i></th>
+                                        <th>Base AC <i class="fas fa-shield-alt"></i></th>
+                                        <th>Strength <i class="fas fa-fist-raised"></i></th>
+                                        <th>Stealth <i class="fas fa-eye-slash"></i></th>
+                                        <th>Weight <i class="fas fa-weight-hanging"></i></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Ring mail</td>
+                                        <td>30 gp</td>
+                                        <td>14</td>
+                                        <td>—</td>
+                                        <td><br class="info-disadvantage-on-stealth" /></td>
+                                        <td>40 lb.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Chain mail</td>
+                                        <td>75 gp</td>
+                                        <td>16</td>
+                                        <td>13</td>
+                                        <td><br class="info-disadvantage-on-stealth" /></td>
+                                        <td>55 lb.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Splint</td>
+                                        <td>200 gp</td>
+                                        <td>17</td>
+                                        <td>15</td>
+                                        <td><br class="info-disadvantage-on-stealth" /></td>
+                                        <td>60 lb.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Plate</td>
+                                        <td>1,500 gp</td>
+                                        <td>18</td>
+                                        <td>15</td>
+                                        <td><br class="info-disadvantage-on-stealth" /></td>
+                                        <td>65 lb.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                        </div>
 
                         <h3>Shields</h3>
-                        <table class="table table-striped table-responsive">
-                            <thead>
-                                <tr>
-                                    <th>Armor</th>
-                                    <th>Value</th>
-                                    <th>Base AC</th>
-                                    <th>Strength</th>
-                                    <th>Stealth</th>
-                                    <th>Weight</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Shield</td>
-                                    <td>10 gp</td>
-                                    <td>+2</td>
-                                    <td>—</td>
-                                    <td>—</td>
-                                    <td>6 lb.</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                        <div class="table-responsive">
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Armor</th>
+                                        <th>Cost <i class="fas fa-coins"></i></th>
+                                        <th>Base AC <i class="fas fa-shield-alt"></i></th>
+                                        <th>Strength <i class="fas fa-fist-raised"></i></th>
+                                        <th>Stealth <i class="fas fa-eye-slash"></i></th>
+                                        <th>Weight <i class="fas fa-weight-hanging"></i></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Shield</td>
+                                        <td>10 gp</td>
+                                        <td>+2</td>
+                                        <td>—</td>
+                                        <td>—</td>
+                                        <td>6 lb.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
 
                         <h3>Ammunition</h3>
-                        <table class="table table-striped table-responsive">
-                            <tr>
-                                <td>Arrows (20)</td>
-                                <td>1 gp</td>
-                                <td>1 lb.</td>
-                            </tr>
-                            <tr>
-                                <td>Blowgun needles (50)</td>
-                                <td>1 gp</td>
-                                <td>1 lb.</td>
-                            </tr>
-                            <tr>
-                                <td>Crossbow bolts (20)</td>
-                                <td>1 gp</td>
-                                <td>1 1/2 lb.</td>
-                            </tr>
-                            <tr>
-                                <td>Sling bullets (20)</td>
-                                <td>4 cp</td>
-                                <td>1 1/2 lb.</td>
-                            </tr>
-                        </table>
+                        <div class="table-responsive">
+                            <table class="table table-striped wide-first-col">
+                                <tr>
+                                    <td>Arrows (20)</td>
+                                    <td>1 gp</td>
+                                    <td>1 lb.</td>
+                                </tr>
+                                <tr>
+                                    <td>Blowgun needles (50)</td>
+                                    <td>1 gp</td>
+                                    <td>1 lb.</td>
+                                </tr>
+                                <tr>
+                                    <td>Crossbow bolts (20)</td>
+                                    <td>1 gp</td>
+                                    <td>1 1/2 lb.</td>
+                                </tr>
+                                <tr>
+                                    <td>Sling bullets (20)</td>
+                                    <td>4 cp</td>
+                                    <td>1 1/2 lb.</td>
+                                </tr>
+                            </table>
+                        </div>
+
 
                         <h3>Arcane Focus</h3>
-                        <table class="table table-striped table-responsive">
-                            <tr>
-                                <td style="text-align: left;">Crystal</td>
-                                <td>10 gp</td>
-                                <td>1 lb.</td>
-                            </tr>
-                            <tr>
-                                <td style="text-align: left;">Orb</td>
-                                <td>20 gp</td>
-                                <td>3 lb.</td>
-                            </tr>
-                            <tr>
-                                <td style="text-align: left;">Rod</td>
-                                <td>10 gp</td>
-                                <td>2 lb.</td>
-                            </tr>
-                            <tr>
-                                <td style="text-align: left;">Staff</td>
-                                <td>5 gp</td>
-                                <td>4 lb.</td>
-                            </tr>
-                            <tr>
-                                <td style="text-align: left;">Wand</td>
-                                <td>10 gp</td>
-                                <td>1 lb.</td>
-                            </tr>
-                        </table>
+                        <div class="table-responsive">
+                            <table class="table table-striped wide-first-col">
+                                <tr>
+                                    <td style="text-align: left;">Crystal</td>
+                                    <td>10 gp</td>
+                                    <td>1 lb.</td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: left;">Orb</td>
+                                    <td>20 gp</td>
+                                    <td>3 lb.</td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: left;">Rod</td>
+                                    <td>10 gp</td>
+                                    <td>2 lb.</td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: left;">Staff</td>
+                                    <td>5 gp</td>
+                                    <td>4 lb.</td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: left;">Wand</td>
+                                    <td>10 gp</td>
+                                    <td>1 lb.</td>
+                                </tr>
+                            </table>
+                        </div>
+
 
                         <h3>Druidic Focus</h3>
-                        <table class="table table-striped table-responsive">
-                            <tr>
-                                <td style="text-align: left;">Sprig of mistletoe</td>
-                                <td>1 gp</td>
-                                <td>-</td>
-                            </tr>
-                            <tr>
-                                <td style="text-align: left;">Totem</td>
-                                <td>1 gp</td>
-                                <td>-</td>
-                            </tr>
-                            <tr>
-                                <td style="text-align: left;">Wooden staff</td>
-                                <td>5 gp</td>
-                                <td>4 lb.</td>
-                            </tr>
-                            <tr>
-                                <td style="text-align: left;">Yew wand</td>
-                                <td>10 gp</td>
-                                <td>1 lb.</td>
-                            </tr>
-                        </table>
+                        <div class="table-responsive">
+                            <table class="table table-striped wide-first-col">
+                                <tr>
+                                    <td style="text-align: left;">Sprig of mistletoe</td>
+                                    <td>1 gp</td>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: left;">Totem</td>
+                                    <td>1 gp</td>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: left;">Wooden staff</td>
+                                    <td>5 gp</td>
+                                    <td>4 lb.</td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: left;">Yew wand</td>
+                                    <td>10 gp</td>
+                                    <td>1 lb.</td>
+                                </tr>
+                            </table>
+                        </div>
+
 
                         <h3>Holy Symbol</h3>
-                        <table class="table table-striped table-responsive">
-                            <tr>
-                                <td style="text-align: left;">Amulet</td>
-                                <td>5 gp</td>
-                                <td>1 lb.</td>
-                            </tr>
-                            <tr>
-                                <td style="text-align: left;">Emblem</td>
-                                <td>5 gp</td>
-                                <td>-</td>
-                            </tr>
-                            <tr>
-                                <td style="text-align: left;">Reliquary</td>
-                                <td>5 gp</td>
-                                <td>2 lb.</td>
-                            </tr>
-                        </table>
+                        <div class="table-responsive">
+                            <table class="table table-striped wide-first-col">
+                                <tr>
+                                    <td style="text-align: left;">Amulet</td>
+                                    <td>5 gp</td>
+                                    <td>1 lb.</td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: left;">Emblem</td>
+                                    <td>5 gp</td>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: left;">Reliquary</td>
+                                    <td>5 gp</td>
+                                    <td>2 lb.</td>
+                                </tr>
+                            </table>
+                        </div>
+
 
 
                     </div>
@@ -968,7 +1003,7 @@
                             <thead>
                                 <tr>
                                     <th>Weapon</th>
-                                    <th>Cost</th>
+                                    <th>Cost <i class="fas fa-coins"></i></th>
                                     <th>Damage</th>
                                     <th>Weight</th>
                                     <th>Properties</th>
@@ -1380,180 +1415,179 @@
             <div class="collapse" id="collapse-attributes-and-skills">
                 <div class="row">
                     <div class="col col-12 col-md-4">
-                            <h3>Attributes & Modifiers</h3>
-                            <div class="row">
-                                <div class="col">
-                                        <table class="table table-striped">
-                                                <tr>
-                                                    <td>1</td>
-                                                    <td>-5</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>2-3</td>
-                                                    <td>-4</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>4-5</td>
-                                                    <td>-3</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>6-7</td>
-                                                    <td>-2</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>8-9</td>
-                                                    <td>-1</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>10-11</td>
-                                                    <td>+0</td>
-                                                </tr>
-                                            </table>
-                                </div>
-                                <div class="col">
-                                        <table class="table table-striped">
-                                                <tr>
-                                                    <td>12-13</td>
-                                                    <td>+1</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>14-15</td>
-                                                    <td>+2</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>16-17</td>
-                                                    <td>+3</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>18-19</td>
-                                                    <td>+4</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>20-21</td>
-                                                    <td>+5</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>22-23</td>
-                                                    <td>+6</td>
-                                                </tr>
-                                            </table>
-                                </div>
+                        <h3>Attributes & Modifiers</h3>
+                        <div class="row">
+                            <div class="col">
+                                <table class="table table-striped">
+                                    <tr>
+                                        <td>1</td>
+                                        <td>-5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2-3</td>
+                                        <td>-4</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4-5</td>
+                                        <td>-3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>6-7</td>
+                                        <td>-2</td>
+                                    </tr>
+                                    <tr>
+                                        <td>8-9</td>
+                                        <td>-1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>10-11</td>
+                                        <td>+0</td>
+                                    </tr>
+                                </table>
                             </div>
-                            <div class="row">
-                                    <div class="col">
-                                        <label for="ability-score-modifier-calculator">Ability Score Modifier
-                                            Calculator</label>
-                                        <div class="input-group mb-3">
-                                            <input id="ability-score-modifier-calculator" type="text"
-                                                class="form-control" placeholder="Ability Score"
-                                                aria-label="Recipient's username"
-                                                aria-describedby="basic-addon2">
-                                            <div class="input-group-append">
-                                                <span class="input-group-text"
-                                                    id="ability-score-modifier-calculator-result">0</span>
-                                            </div>
-                                        </div>
+                            <div class="col">
+                                <table class="table table-striped">
+                                    <tr>
+                                        <td>12-13</td>
+                                        <td>+1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>14-15</td>
+                                        <td>+2</td>
+                                    </tr>
+                                    <tr>
+                                        <td>16-17</td>
+                                        <td>+3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>18-19</td>
+                                        <td>+4</td>
+                                    </tr>
+                                    <tr>
+                                        <td>20-21</td>
+                                        <td>+5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>22-23</td>
+                                        <td>+6</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <label for="ability-score-modifier-calculator">Ability Score Modifier
+                                    Calculator</label>
+                                <div class="input-group mb-3">
+                                    <input id="ability-score-modifier-calculator" type="text" class="form-control"
+                                        placeholder="Ability Score" aria-label="Recipient's username"
+                                        aria-describedby="basic-addon2">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text"
+                                            id="ability-score-modifier-calculator-result">0</span>
                                     </div>
                                 </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="col col-12 col-md-4">
                         <h3>Skills</h3>
                         <div class="table-responsive">
-                                <table class="table table-striped">
-                                    <tr>
-                                        <td><span data-toggle="tooltip" data-placement="top"
-                                                title="Strength measures bodily power and natural athleticism">Strength</span>
-                                        </td>
-                                        <td>Athletics</td>
-                                    </tr>
-                                    <tr>
-                                        <td><span data-toggle="tooltip" data-placement="top"
-                                                title="Dexterity measures agility, reflexes, balance and poise">Dexterity</span>
-                                        </td>
-                                        <td>
-                                            Athletics<br />
-                                            Acrobatics<br />
-                                            Sleight of Hand<br />
-                                            Stealth<br />
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td><span data-toggle="tooltip" data-placement="top"
-                                                title="Constitution measures natural health, stamina and vital force">Constitution</span>
-                                        </td>
-                                        <td><em class="text-muted">Consitution has no associated skills</em>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td><span data-toggle="tooltip" data-placement="top"
-                                                title="Intelligence measures mental acuity, information recall and analytical skills">Intelligence</span>
-                                        </td>
-                                        <td>
-                                            Arcana<br />
-                                            History<br />
-                                            Investigation<br />
-                                            Nature<br />
-                                            Religion<br />
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td><span data-toggle="tooltip" data-placement="top"
-                                                title="Wisdom measures awareness, intuition and insight">Wisdom</span>
-                                        </td>
-                                        <td>
-                                            Animal Handling<br />
-                                            Insight<br />
-                                            Medicine<br />
-                                            Perception<br />
-                                            Survival<br />
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td><span data-toggle="tooltip" data-placement="top"
-                                                title="Charisma measures confidence, eloquence and leadership qualities">Charisma</span>
-                                        </td>
-                                        <td>
-                                            Deception<br />
-                                            Intimidation<br />
-                                            Performance<br />
-                                            Persuasion<br />
-                                        </td>
-                                    </tr>
-                                </table>
-                            </div>
+                            <table class="table table-striped">
+                                <tr>
+                                    <td><span data-toggle="tooltip" data-placement="top"
+                                            title="Strength measures bodily power and natural athleticism">Strength</span>
+                                    </td>
+                                    <td>Athletics</td>
+                                </tr>
+                                <tr>
+                                    <td><span data-toggle="tooltip" data-placement="top"
+                                            title="Dexterity measures agility, reflexes, balance and poise">Dexterity</span>
+                                    </td>
+                                    <td>
+                                        Athletics<br />
+                                        Acrobatics<br />
+                                        Sleight of Hand<br />
+                                        Stealth<br />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><span data-toggle="tooltip" data-placement="top"
+                                            title="Constitution measures natural health, stamina and vital force">Constitution</span>
+                                    </td>
+                                    <td><em class="text-muted">Consitution has no associated skills</em>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><span data-toggle="tooltip" data-placement="top"
+                                            title="Intelligence measures mental acuity, information recall and analytical skills">Intelligence</span>
+                                    </td>
+                                    <td>
+                                        Arcana<br />
+                                        History<br />
+                                        Investigation<br />
+                                        Nature<br />
+                                        Religion<br />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><span data-toggle="tooltip" data-placement="top"
+                                            title="Wisdom measures awareness, intuition and insight">Wisdom</span>
+                                    </td>
+                                    <td>
+                                        Animal Handling<br />
+                                        Insight<br />
+                                        Medicine<br />
+                                        Perception<br />
+                                        Survival<br />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><span data-toggle="tooltip" data-placement="top"
+                                            title="Charisma measures confidence, eloquence and leadership qualities">Charisma</span>
+                                    </td>
+                                    <td>
+                                        Deception<br />
+                                        Intimidation<br />
+                                        Performance<br />
+                                        Persuasion<br />
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
                     </div>
                     <div class="col col-12 col-md-4">
                         <h3>DCs</h3>
                         <table class="table table-striped">
-                                <tr>
-                                    <th>Task Difficulty</th>
-                                    <th>DC</th>
-                                </tr>
-                                <tr>
-                                    <td>Very Easy</td>
-                                    <td>5</td>
-                                </tr>
-                                <tr>
-                                    <td>Easy</td>
-                                    <td>10</td>
-                                </tr>
-                                <tr>
-                                    <td>Medium</td>
-                                    <td>15</td>
-                                </tr>
-                                <tr>
-                                    <td>Hard</td>
-                                    <td>20</td>
-                                </tr>
-                                <tr>
-                                    <td>Very Hard</td>
-                                    <td>25</td>
-                                </tr>
-                                <tr>
-                                    <td>Nearly Impossible</td>
-                                    <td>30</td>
-                                </tr>
-                            </table>
+                            <tr>
+                                <th>Task Difficulty</th>
+                                <th>DC</th>
+                            </tr>
+                            <tr>
+                                <td>Very Easy</td>
+                                <td>5</td>
+                            </tr>
+                            <tr>
+                                <td>Easy</td>
+                                <td>10</td>
+                            </tr>
+                            <tr>
+                                <td>Medium</td>
+                                <td>15</td>
+                            </tr>
+                            <tr>
+                                <td>Hard</td>
+                                <td>20</td>
+                            </tr>
+                            <tr>
+                                <td>Very Hard</td>
+                                <td>25</td>
+                            </tr>
+                            <tr>
+                                <td>Nearly Impossible</td>
+                                <td>30</td>
+                            </tr>
+                        </table>
                     </div>
                     <hr>
                 </div>
@@ -1810,7 +1844,8 @@
                     Travel, Terrain & Landscape
                 </a>
                 <br class="d-md-none">
-                <span class='subheading'>Suggested DCs for tracking, travel times, weather effects and random weather</span>
+                <span class='subheading'>Suggested DCs for tracking, travel times, weather effects and random
+                    weather</span>
             </h2>
             <div class="collapse" id="collapse-landscape-and-terrain">
                 <div class="row">
@@ -1850,7 +1885,8 @@
                     </div>
                     <div class="col">
                         <h3>Travel Times</h3>
-                        <p>Party takes 10 hours to travel 24 miles a day (additional 8 hours for rest and 6 hours to make/break camp, prepare meals, forage, and hunt as time permits).</p>
+                        <p>Party takes 10 hours to travel 24 miles a day (additional 8 hours for rest and 6 hours to
+                            make/break camp, prepare meals, forage, and hunt as time permits).</p>
                         <p><strong>Difcult terrain halves your speed</strong></p>
                         <table class=" table table-striped table-responsive">
                             <thead>
@@ -1895,23 +1931,32 @@
                             <tbody>
                                 <tr>
                                     <td>Extreme Cold</td>
-                                    <td>Each hour, creatures must pass a DC 10 CON saving throw, or gain 1 point of exhaustion. Creatures with cold resistance or those wearing specialist cold weather equipment (gloves, thick coat, etc.) auto succeed.</td>
+                                    <td>Each hour, creatures must pass a DC 10 CON saving throw, or gain 1 point of
+                                        exhaustion. Creatures with cold resistance or those wearing specialist cold
+                                        weather equipment (gloves, thick coat, etc.) auto succeed.</td>
                                 </tr>
                                 <tr>
                                     <td>Extreme Heat</td>
-                                    <td>Each hour, creatures must pass a CON saving throw, or gain 1 point of exhaustion. DC starts at 5, and goes up by 5 for every hour of exposure to the extreme heat. Creatures wearing armour or thick clothing have disadvantage on the roll. Creatures with heat resistance auto succeed.</td>
+                                    <td>Each hour, creatures must pass a CON saving throw, or gain 1 point of
+                                        exhaustion. DC starts at 5, and goes up by 5 for every hour of exposure to the
+                                        extreme heat. Creatures wearing armour or thick clothing have disadvantage on
+                                        the roll. Creatures with heat resistance auto succeed.</td>
                                 </tr>
                                 <tr>
                                     <td>Strong Wind</td>
-                                    <td>Disadvantage on ranged weapon attacks and WIS (Perception) checks based on hearing. A strong wind also extinguishes open flames, disperses fog and makes flying via non-magical means extremely difficult.</td>
+                                    <td>Disadvantage on ranged weapon attacks and WIS (Perception) checks based on
+                                        hearing. A strong wind also extinguishes open flames, disperses fog and makes
+                                        flying via non-magical means extremely difficult.</td>
                                 </tr>
                                 <tr>
                                     <td>Dust/Sand Storm</td>
-                                    <td>Often created via strong winds, a dust/sand storm causes disadvantage on ranged weapon attacks and WIS (Perception) checks based on sight.</td>
+                                    <td>Often created via strong winds, a dust/sand storm causes disadvantage on ranged
+                                        weapon attacks and WIS (Perception) checks based on sight.</td>
                                 </tr>
                                 <tr>
                                     <td>Heavy Rain/Snow</td>
-                                    <td>Disadvantage on WIS (Perception) checks based on sight and hearing, and extinguishes open flames.</td>
+                                    <td>Disadvantage on WIS (Perception) checks based on sight and hearing, and
+                                        extinguishes open flames.</td>
                                 </tr>
                             </tbody>
                         </table>

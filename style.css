@@ -67,10 +67,19 @@ footer span {
 
 table.order-of-operations{
   table-layout: fixed;
-    width: 100%;
+    width: 70%;
     text-align: center;
+    margin-left: 15%;
 }
-table.order-of-operations td {
-  border: 1px solid #c0392b;
-  padding: 1em;
+
+table.wide-first-col thead tr th:first-child,
+table.wide-first-col tbody tr td:first-child {
+  width: 75%;
+  word-break: break-all;
+}
+
+table.wide-first-col tr th:first-child,
+table.wide-first-col tr td:first-child {
+  width: 75%;
+  word-break: break-all;
 }
