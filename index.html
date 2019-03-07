@@ -2022,23 +2022,25 @@
             <div class="collapse" id="collapse-npc-generation">
                 <div class="row">
                     <div class="col">
-                        <button v-on:click="newNpc">Generate New NPC</button>
-
-                        <div v-if="currentNpc">
-                            <p>{{ currentNpc.formattedData.name }}</p>
-                            <p>{{ currentNpc.formattedData.race }}</p>
-                            <p>{{ currentNpc.formattedData.gender }}</p>
-                            <li v-for="trait in currentNpc.formattedData.traits">
-                                {{ trait }}
-                            </li>
-                            <li v-for="desire in currentNpc.formattedData.desires">
-                                {{ desire }}
-                            </li>
+                        <button class="btn btn-primary" v-on:click="newNpc">Generate New NPC</button>
+                        <br>
+                        <br>
+                        <div class="card" v-if="currentNpc">
+                            <div class="card-body">
+                                <h5 class="card-title">{{ currentNpc.formattedData.name }}</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">{{ currentNpc.formattedData.race }} {{ currentNpc.formattedData.gender }}</h6>
+                                <li v-for="trait in currentNpc.formattedData.traits">
+                                    {{ trait }}
+                                </li>
+                                <li v-for="desire in currentNpc.formattedData.desires">
+                                    {{ desire }}
+                                </li>
+                            </div>
                         </div>
                     </div>
                     <div class="col">
                         <li v-for="npc in npcs" v-on:click="loadNpc(npc)">
-                            {{ npc.formattedData.name }}
+                            {{ npc.formattedData.name }} ({{ npc.formattedData.race }} {{ npc.formattedData.gender }})
                         </li>
                     </div>
                 </div>
