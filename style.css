@@ -89,6 +89,10 @@ table.wide-first-col tr td:first-child {
   overflow-y: scroll;
 }
 
+.old-npc-list-wrapper li.list-group-item {
+  cursor: pointer
+}
+
 .old-npc-list-wrapper li.list-group-item:hover {
   background-color:#eee;
 }
