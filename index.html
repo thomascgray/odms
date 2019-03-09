@@ -2190,16 +2190,23 @@
                             <div class="card-body">
                                 <h5 class="card-title">{{ currentNpc.formattedData.name }}</h5>
                                 <h6 class="card-subtitle mb-2 text-muted">{{ currentNpc.formattedData.race }} {{ currentNpc.formattedData.gender }}</h6>
-                                <li v-for="trait in currentNpc.formattedData.traits">{{ trait }}</li>
-                                <li v-for="desire in currentNpc.formattedData.desires">{{ desire }}</li>
+                                <ul class='pl-3'>
+                                    <li v-for="trait in currentNpc.formattedData.traits">{{ trait }}</li>
+                                    <li v-for="desire in currentNpc.formattedData.desires">{{ desire }}</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
                     <div class="col col-sm-12 col-md-4">
+                        <small v-if='npcs.length > 0' class='text-muted'><em>Click an NPC to load</em></small>
                         <div class='old-npc-list-wrapper'>
-                            <li v-for="npc in npcs" v-on:click="loadNpc(npc)">
-                                {{ npc.formattedData.name }} ({{ npc.formattedData.race }} {{ npc.formattedData.gender }})
-                            </li>
+                            <ul class='list-group'>
+                                <li class='list-group-item' v-for="npc in npcs" v-on:click="loadNpc(npc)">
+                                    <i class="fas fa-undo text-black-50"></i>
+                                    {{ npc.formattedData.name }}
+                                    <small><span class='text-muted'>({{ npc.formattedData.race }} {{ npc.formattedData.gender }})</span></small>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>

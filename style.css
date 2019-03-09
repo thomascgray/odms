@@ -85,6 +85,18 @@ table.wide-first-col tr td:first-child {
 }
 
 .old-npc-list-wrapper {
-  max-height: 14em;
+  max-height: 16em;
   overflow-y: scroll;
+}
+
+.old-npc-list-wrapper li.list-group-item:hover {
+  background-color:#eee;
+}
+
+.old-npc-list-wrapper li.list-group-item i {
+  display: none;
+}
+
+.old-npc-list-wrapper li.list-group-item:hover i {
+  display: inline-block;
 }
