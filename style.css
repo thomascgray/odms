@@ -83,3 +83,8 @@ table.wide-first-col tr td:first-child {
   width: 75%;
   word-break: break-all;
 }
+
+.old-npc-list-wrapper {
+  max-height: 14em;
+  overflow-y: scroll;
+}
