@@ -2155,12 +2155,12 @@
             </h2>
             <div class="collapse" id="collapse-npc-generation">
                 <div class="row">
-                    <div class="col col-sm-12 col-md-8">
+                    <div class="col col-12 col-md-8">
                         <form class='form-inline mb-3'>
-                            <div class="form-group m-2">
+                            <div class="input-group m-2">
                                 <button type="button" class="btn btn-primary" v-on:click="newNpc">Generate New NPC</button>
                             </div>
-                            <div class="form-group m-2">
+                            <div class="input-group m-2">
                                 <label for="npcRaceSelect">Race</label>
                                 <br>
                                 <select class='ml-2' id='npcRaceSelect' v-model="npcRace">
@@ -2176,7 +2176,7 @@
                                     <option value='tiefling'>Tiefling</option>
                                 </select>
                             </div>
-                            <div class="form-group m-2">
+                            <div class="input-group m-2">
                                 <label for="npcGenderSelect">Gender</label>
                                 <br>
                                 <select class='ml-2' id='npcGenderSelect' v-model="npcGender">
@@ -2197,7 +2197,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col col-sm-12 col-md-4">
+                    <div class="col col-12 col-md-4">
                         <small v-if='npcs.length > 0' class='text-muted'><em>Click an NPC to load</em></small>
                         <div class='old-npc-list-wrapper'>
                             <ul class='list-group'>
@@ -2229,7 +2229,7 @@
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
     <script src="dice-roller.js"></script>
-    <script src="fantasy_content_generator.js"></script>
+    <script src="https://unpkg.com/fantasy-content-generator/fantasy_content_generator.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.8/dist/vue.min.js"></script>
 
     <script>
