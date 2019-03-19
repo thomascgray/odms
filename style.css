@@ -104,3 +104,20 @@ table.wide-first-col tr td:first-child {
 .old-npc-list-wrapper li.list-group-item:hover i {
   display: inline-block;
 }
+
+#collapse-npc-generation li i {
+  display: none;
+  opacity: 0.5;
+}
+
+#collapse-npc-generation li:hover i {
+  display: inline;
+}
+
+#collapse-npc-generation li:hover i:hover {
+  opacity: 1;
+}
+
+#collapse-npc-generation li:hover i.fa-minus-square:hover {
+  color: #c0392b;
+}

@@ -2191,9 +2191,11 @@
                                 <h5 class="card-title">{{ currentNpc.formattedData.name }}</h5>
                                 <h6 class="card-subtitle mb-2 text-muted">{{ currentNpc.formattedData.race }} {{ currentNpc.formattedData.gender }}</h6>
                                 <ul class='pl-3'>
-                                    <li v-for="trait in currentNpc.formattedData.traits">{{ trait }}</li>
-                                    <li v-for="desire in currentNpc.formattedData.desires">{{ desire }}</li>
+                                    <li v-for="trait in currentNpc.formattedData.traits">{{ trait }} <i @click='refreshTrait(trait)' class="fas fa-sync-alt"></i> <i @click='dropTrait(trait)' class="fas fa-minus-square"></i></li>
+                                    <li v-for="desire in currentNpc.formattedData.desires">{{ desire }} <i @click='refreshDesire(desire)' class="fas fa-sync-alt"></i> <i @click='dropDesire(desire)' class="fas fa-minus-square"></i></li>
                                 </ul>
+                                <button type="button" class="btn btn-primary btn-sm" @click="addTrait">Add Trait</button>
+                                <button type="button" class="btn btn-primary btn-sm" @click="addDesire">Add Desire</button>
                             </div>
                         </div>
                     </div>
@@ -2229,7 +2231,7 @@
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
     <script src="dice-roller.js"></script>
-    <script src="https://unpkg.com/fantasy-content-generator/fantasy_content_generator.js"></script>
+    <script src="https://unpkg.com/fantasy-content-generator@3.1.0/fantasy_content_generator.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.8/dist/vue.min.js"></script>
 
     <script>
@@ -2290,6 +2292,26 @@
                             gender: this.npcGender
                         });
                         this.npcs.unshift(this.currentNpc);
+                    },
+                    refreshTrait: function (trait) {
+                        var newTrait = window.FantasyContentGenerator.NPCs.trait();
+                        this.currentNpc.traits.splice(this.currentNpc.traits.indexOf(trait), 1, newTrait)
+                    },
+                    refreshDesire: function (desire) {
+                        var newDesire = window.FantasyContentGenerator.NPCs.desire();
+                        this.currentNpc.desires.splice(this.currentNpc.desires.indexOf(desire), 1, newDesire)
+                    },
+                    dropTrait: function (trait) {
+                        this.currentNpc.traits.splice(this.currentNpc.traits.indexOf(trait), 1)
+                    },
+                    dropDesire: function (desire) {
+                        this.currentNpc.desires.splice(this.currentNpc.desires.indexOf(desire), 1)
+                    },
+                    addTrait: function () {
+                        this.currentNpc.traits.push(window.FantasyContentGenerator.NPCs.trait());
+                    },
+                    addDesire: function () {
+                        this.currentNpc.desires.push(window.FantasyContentGenerator.NPCs.desire());
                     },
                     loadNpc: function (npc) {
                         this.currentNpc = npc;
