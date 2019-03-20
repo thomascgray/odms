@@ -111,13 +111,17 @@ table.wide-first-col tr td:first-child {
 }
 
 #collapse-npc-generation li:hover i {
-  display: inline;
+  /* display: inline; */
 }
 
 #collapse-npc-generation li:hover i:hover {
-  opacity: 1;
+  /* opacity: 1; */
 }
 
 #collapse-npc-generation li:hover i.fa-minus-square:hover {
   color: #c0392b;
+}
+
+.npc-button {
+  display: none;
 }

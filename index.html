@@ -2194,8 +2194,22 @@
                                     <li v-for="trait in currentNpc.formattedData.traits">{{ trait }} <i @click='refreshTrait(trait)' class="fas fa-sync-alt"></i> <i @click='dropTrait(trait)' class="fas fa-minus-square"></i></li>
                                     <li v-for="desire in currentNpc.formattedData.desires">{{ desire }} <i @click='refreshDesire(desire)' class="fas fa-sync-alt"></i> <i @click='dropDesire(desire)' class="fas fa-minus-square"></i></li>
                                 </ul>
-                                <button type="button" class="btn btn-primary btn-sm" @click="addTrait">Add Trait</button>
-                                <button type="button" class="btn btn-primary btn-sm" @click="addDesire">Add Desire</button>
+                                <button type="button" class="npc-button btn btn-primary btn-sm" @click="addTrait">Add Trait</button>
+                                <button type="button" class="npc-button btn btn-primary btn-sm" @click="addDesire">Add Desire</button>
+                                <div v-if="currentNpc.relations.length >= 1" class="card mt-2">
+                                    <div class="card-body">
+                                        <div v-for="relation in currentNpc.relations">
+                                            <p class='text-muted text-uppercase'>{{ relation.relationTitle }}</p>
+                                            <h5 class="card-title">{{ relation.npc.formattedData.name }}</h5>
+                                            <h6 class="card-subtitle mb-2 text-muted">{{ relation.npc.formattedData.race }} {{ relation.npc.formattedData.gender }}</h6>
+                                            <ul class='pl-3'>
+                                                <li v-for="trait in relation.npc.formattedData.traits">{{ trait }} <i @click='refreshTrait(trait)' class="fas fa-sync-alt"></i> <i @click='dropTrait(trait)' class="fas fa-minus-square"></i></li>
+                                                <li v-for="desire in relation.npc.formattedData.desires">{{ desire }} <i @click='refreshDesire(desire)' class="fas fa-sync-alt"></i> <i @click='dropDesire(desire)' class="fas fa-minus-square"></i></li>
+                                            </ul>
+                                            <hr v-if="currentNpc.relations >= 2"/>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -2231,7 +2245,7 @@
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
     <script src="dice-roller.js"></script>
-    <script src="https://unpkg.com/fantasy-content-generator@3.1.0/fantasy_content_generator.js"></script>
+    <script src="https://unpkg.com/fantasy-content-generator@3.2.1/fantasy_content_generator.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.8/dist/vue.min.js"></script>
 
     <script>
@@ -2289,8 +2303,10 @@
                     newNpc: function () {
                         this.currentNpc = window.FantasyContentGenerator.NPCs.generate({
                             race: this.npcRace,
-                            gender: this.npcGender
+                            gender: this.npcGender,
+                            shouldGenerateRelations: true
                         });
+                        console.log('this.currentNpc', this.currentNpc);
                         this.npcs.unshift(this.currentNpc);
                     },
                     refreshTrait: function (trait) {
