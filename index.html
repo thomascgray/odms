@@ -2186,7 +2186,7 @@
                                 </select>
                             </div>
                         </form>
-                        <div class="card" v-if="currentNpc">
+                        <div class="card shadow" v-if="currentNpc">
                             <div class="card-body">
                                 <h5 class="card-title">{{ currentNpc.formattedData.name }}</h5>
                                 <h6 class="card-subtitle mb-2 text-muted">{{ currentNpc.formattedData.race }} {{ currentNpc.formattedData.gender }}</h6>
@@ -2199,7 +2199,7 @@
                                 <div v-if="currentNpc.relations.length >= 1" class="card mt-2">
                                     <div class="card-body">
                                         <div v-for="relation in currentNpc.relations">
-                                            <p class='text-muted text-uppercase'>{{ relation.relationTitle }}</p>
+                                            <small class='text-muted text-uppercase'>{{ relation.relationTitle }}</small>
                                             <h5 class="card-title">{{ relation.npc.formattedData.name }}</h5>
                                             <h6 class="card-subtitle mb-2 text-muted">{{ relation.npc.formattedData.race }} {{ relation.npc.formattedData.gender }}</h6>
                                             <ul class='pl-3'>
@@ -2245,7 +2245,7 @@
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
     <script src="dice-roller.js"></script>
-    <script src="https://unpkg.com/fantasy-content-generator@3.2.1/fantasy_content_generator.js"></script>
+    <script src="https://unpkg.com/fantasy-content-generator@3.3.0/fantasy_content_generator.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.8/dist/vue.min.js"></script>
 
     <script>
