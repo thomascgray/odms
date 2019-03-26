@@ -2247,39 +2247,19 @@
                         </form>
                         <div class="card shadow" v-if="currentMagicItem">
                             <div class="card-body">
-                                <h5 class="card-title">{{ currentMagicItem.formattedData.name }}</h5>
-                                <h6 class="card-subtitle mb-2 text-muted">{{ currentMagicItem.formattedData.race }} {{ currentMagicItem.formattedData.gender }}</h6>
-                                <ul class='pl-3'>
-                                    <li v-for="trait in currentMagicItem.formattedData.traits">{{ trait }} <i @click='refreshTrait(trait)' class="fas fa-sync-alt"></i> <i @click='dropTrait(trait)' class="fas fa-minus-square"></i></li>
-                                    <li v-for="desire in currentMagicItem.formattedData.desires">{{ desire }} <i @click='refreshDesire(desire)' class="fas fa-sync-alt"></i> <i @click='dropDesire(desire)' class="fas fa-minus-square"></i></li>
-                                </ul>
-                                <button type="button" class="npc-button btn btn-primary btn-sm" @click="addTrait">Add Trait</button>
-                                <button type="button" class="npc-button btn btn-primary btn-sm" @click="addDesire">Add Desire</button>
-                                <div v-if="currentMagicItem.relations.length >= 1" class="card mt-2">
-                                    <div class="card-body">
-                                        <div v-for="relation in currentMagicItem.relations">
-                                            <small class='text-muted text-uppercase'>{{ relation.relationTitle }}</small>
-                                            <h5 class="card-title">{{ relation.npc.formattedData.name }}</h5>
-                                            <h6 class="card-subtitle mb-2 text-muted">{{ relation.npc.formattedData.race }} {{ relation.npc.formattedData.gender }}</h6>
-                                            <ul class='pl-3'>
-                                                <li v-for="trait in relation.npc.formattedData.traits">{{ trait }} <i @click='refreshTrait(trait)' class="fas fa-sync-alt"></i> <i @click='dropTrait(trait)' class="fas fa-minus-square"></i></li>
-                                                <li v-for="desire in relation.npc.formattedData.desires">{{ desire }} <i @click='refreshDesire(desire)' class="fas fa-sync-alt"></i> <i @click='dropDesire(desire)' class="fas fa-minus-square"></i></li>
-                                            </ul>
-                                            <hr v-if="currentMagicItem.relations >= 2"/>
-                                        </div>
-                                    </div>
-                                </div>
+                                <h5 class="card-title">{{ currentMagicItem.formattedData.title }}</h5>
+                                <h6 v-if="currentMagicItem.formattedData.tagline" class="card-subtitle mb-2 text-muted font-italic">{{ currentMagicItem.formattedData.tagline }}</h6>
                             </div>
                         </div>
                     </div>
                     <div class="col col-12 col-md-4">
-                        <small v-if='magicItems.length > 0' class='text-muted'><em>Click an NPC to load</em></small>
+                        <small v-if='magicItems.length > 0' class='text-muted'><em>Click a magic item to load</em></small>
                         <div class='old-npc-list-wrapper'>
                             <ul class='list-group'>
-                                <li class='list-group-item' v-for="npc in magicItems" v-on:click="loadNpc(npc)">
+                                <li class='list-group-item' v-for="magicItem in magicItems" v-on:click="loadMagicItem(magicItem)">
                                     <i class="fas fa-undo text-black-50"></i>
-                                    {{ npc.formattedData.name }}
-                                    <small><span class='text-muted'>({{ npc.formattedData.race }} {{ npc.formattedData.gender }})</span></small>
+                                    {{ magicItem.formattedData.title }}
+                                    <small><span v-if="magicItem.formattedData.tagline" class='text-muted'>({{ magicItem.formattedData.tagline }})</span></small>
                                 </li>
                             </ul>
                         </div>
@@ -2401,7 +2381,7 @@
                 },
                 methods: {
                     newMagicItem: function () {
-                        this.currentMagicItem = window.FantasyContentGenerator.magicItems.generate();
+                        this.currentMagicItem = window.FantasyContentGenerator.MagicItems.generate();
                         this.magicItems.unshift(this.currentMagicItem);
                     },
                     loadMagicItem: function (MagicItem) {
