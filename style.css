@@ -22,11 +22,11 @@
 }
 
 .col:not(.no-top-margin) {
-    margin-top: 1em;
+  margin-top: 1em;
 }
 
 .row:not(.no-bottom-margin):last-of-type {
-  margin-bottom:1em;
+  margin-bottom: 1em;
 }
 
 .dice-roller span.badge {
@@ -35,16 +35,16 @@
 }
 
 .dice-roller span.badge:hover {
-  opacity:0.8
+  opacity: 0.8;
 }
 
 .dice-roller span.badge:active {
-  opacity:0.6
+  opacity: 0.6;
 }
 
 [data-toggle="tooltip"] {
-    padding-bottom: 2px;
-    border-bottom: 1px dashed #c0392b;
+  padding-bottom: 2px;
+  border-bottom: 1px dashed #c0392b;
 }
 
 h2 .subheading {
@@ -55,21 +55,31 @@ span.damage-notation {
   font-weight: bold;
 }
 
-span.damage-notation.d4 { color: #16a085; }
-span.damage-notation.d6 { color: #f39c12; }
-span.damage-notation.d8 { color: #2980b9; }
-span.damage-notation.d10 { color: #c0392b; }
-span.damage-notation.d12 { color: #8e44ad; }
+span.damage-notation.d4 {
+  color: #16a085;
+}
+span.damage-notation.d6 {
+  color: #f39c12;
+}
+span.damage-notation.d8 {
+  color: #2980b9;
+}
+span.damage-notation.d10 {
+  color: #c0392b;
+}
+span.damage-notation.d12 {
+  color: #8e44ad;
+}
 
 footer span {
   font-size: 0.8em;
 }
 
-table.order-of-operations{
+table.order-of-operations {
   table-layout: fixed;
-    width: 70%;
-    text-align: center;
-    margin-left: 15%;
+  width: 70%;
+  text-align: center;
+  margin-left: 15%;
 }
 
 table.wide-first-col thead tr th:first-child,
@@ -84,44 +94,8 @@ table.wide-first-col tr td:first-child {
   word-break: break-all;
 }
 
-.old-npc-list-wrapper {
-  max-height: 16em;
-  overflow-y: scroll;
-}
-
-.old-npc-list-wrapper li.list-group-item {
-  cursor: pointer
-}
-
-.old-npc-list-wrapper li.list-group-item:hover {
-  background-color:#eee;
-}
-
-.old-npc-list-wrapper li.list-group-item i {
-  display: none;
-}
-
-.old-npc-list-wrapper li.list-group-item:hover i {
-  display: inline-block;
-}
-
-#collapse-npc-generation li i {
-  display: none;
-  opacity: 0.5;
-}
-
-#collapse-npc-generation li:hover i {
-  /* display: inline; */
-}
-
-#collapse-npc-generation li:hover i:hover {
-  /* opacity: 1; */
-}
-
-#collapse-npc-generation li:hover i.fa-minus-square:hover {
-  color: #c0392b;
-}
-
-.npc-button {
-  display: none;
+iframe {
+  width: 100%;
+  border: none;
+  height: 100vh;
 }
